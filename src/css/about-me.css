@@ -1,0 +1,185 @@
+.container {
+  max-width: 2280px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+}
+
+.about-me {
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.about-me h1 {
+  color: #f0f0f0;
+
+  font-family: Impact;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 1.7999999523162842px;
+}
+
+.highlight {
+  color: #00b068;
+}
+
+.bio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bio-section img {
+  border-radius: 16px;
+  max-width: 320px;
+  height: 374px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio {
+  max-width: 100%;
+  flex: 1 1 100%;
+  text-align: justify;
+}
+
+.bio h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  margin-top: 40px;
+  color: #f0f0f0;
+
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.bio p {
+  line-height: 1.5;
+  color: #f0f0f0;
+  margin-bottom: 24px;
+
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  line-height: 24px;
+  /* text-align: left; */
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 32px 32px 60px 32px;
+  }
+
+  .about-me h1 {
+    font-size: 108px;
+    line-height: 124px;
+  }
+
+  .bio h2 {
+    font-size: 1.25em;
+    margin-left: 32px;
+
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+  }
+
+  .bio p {
+    font-size: 0.9em;
+    margin-left: 32px;
+  }
+
+  .bio-section {
+    flex-direction: row;
+  }
+
+  .bio-section img {
+    max-width: 336px;
+    height: 392px;
+    flex: 1 1 50%;
+    margin-top: 368px;
+  }
+
+  .bio {
+    flex: 1 1 50%;
+  }
+}
+
+.bio p:last-child::before {
+  margin-top: 40px;
+  top: 528px;
+  content: '';
+  position: absolute;
+  left: 32px;
+  height: 288px;
+  width: 384px;
+  background-image: url(../img/decor-bg-2-min.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.bio {
+  position: relative;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 32px 32px 80px 32px;
+  }
+
+  .about-me h1 {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .bio h2 {
+    margin-left: 136px;
+    font-size: 1.5em;
+
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .bio p {
+    font-size: 1em;
+    margin-left: 136px;
+  }
+
+  .bio-section img {
+    max-width: 384px;
+    height: 448px;
+    margin-left: 202px;
+  }
+
+  .bio p:last-child::before {
+    left: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bio p:last-child::before {
+    display: none;
+  }
+}
