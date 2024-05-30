@@ -1,0 +1,121 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+} */
+
+/* @font-face {
+    font-family: 'Poppins';
+    src:
+        url('fonts/ImpactLTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.reviews {
+
+    margin-top: 80px;
+    padding: 0px 20px;
+    width: 320px;
+    height: 464px;
+    background-color: #f0f0f0;
+    position: relative;
+
+}
+
+.section-title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Impact LT Std', sans-serif;
+}
+
+.reviews-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+}
+
+.list-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: black;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.reviews-container {
+    max-width: 320px;
+    border-radius: 16px;
+    padding: 32px;
+    height: auto;
+    background-color: #e4e5e6;
+}
+
+.reviews-username {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: black;
+
+}
+
+.user-info {
+    display: flex;
+    gap: 16px;
+    width: 256px;
+    height: 40px;
+    align-items: center;
+
+}
+
+
+
+.swiper-navigation-container {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    display: flex;
+    /* gap: 18px; */
+    width: 96px;
+    height: 40px;
+}
+
+.reviews .swiper-button-next,
+.reviews .swiper-button-prev {
+    border: 1px solid rgba(41, 41, 41, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: 8px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    /* margin-left: 18px; */
+}
+
+.reviews .swiper-button-prev {
+    margin-right: 18px;
+}
+
+.reviews .swiper-button-next::after,
+.reviews .swiper-button-prev::after {
+    display: none;
+}
+
+.reviews .swiper-button-prev svg,
+.reviews .swiper-button-next svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+}
