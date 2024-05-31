@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   const triggers = document.querySelectorAll('.ac-trigger');
   const panels = document.querySelectorAll('.ac-panel');
