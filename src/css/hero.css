@@ -1,0 +1,181 @@
+/* ------mobile----- */
+
+.hero-container {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  background-image: url(../img/decor-hero-mob-1x.png);
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url(../img/decor-hero-mob-2x.png);
+  }
+}
+
+.hero-title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+}
+.hero-title-green {
+  color: #14c57c;
+}
+.my-photo {
+  display: none;
+  border-radius: 18px;
+}
+.hero-description {
+  display: flex;
+  gap: 72px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.order-link-hero {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.order-link-block:hover,
+.order-link-block:active,
+.order-link-block:focus {
+  background: rgba(20, 197, 124, 0.6);
+}
+.order-link {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  display: block;
+  margin-top: 24px;
+}
+.order-link::before {
+}
+.order-link-block {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  border-radius: 16px;
+  width: 165px;
+  height: 80px;
+  background: #204136;
+}
+.hero-text {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+.hero-text-color {
+  color: #14c57c;
+}
+.hero-soc {
+  background: #2a2d32;
+  padding: 32px 0;
+}
+.hero-soc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-soc-link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #f0f0f0;
+}
+
+@media screen and (min-width: 360px) {
+  .order-link {
+    margin-top: 30px;
+  }
+  .order-link-block {
+    left: 155px;
+    height: 92px;
+  }
+}
+
+/* ------tablet----- */
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    background-image: url(../img/decor-hero-tablet-1x.png);
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url(../img/decor-hero-tablet-2x.png);
+    }
+  }
+  .hero-title {
+    font-size: 136px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    margin-bottom: 60px;
+  }
+  .order-link-block {
+    width: 261px;
+    height: 96px;
+  }
+  .hero-soc-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .hero-text {
+    font-size: 20px;
+  }
+  .hero-soc {
+    padding: 40px 0;
+  }
+}
+
+/* ------desctop----- */
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    background-image: url(../img/decor-hero-desctop-1x.png);
+    padding-top: 168px;
+    padding-bottom: 132px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url(../img/decor-hero-desctop-2x.png);
+    }
+  }
+  .title-pictire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  .my-photo {
+    display: block;
+    border-radius: 18px;
+  }
+  .hero-title {
+    margin-bottom: 80px;
+  }
+  .hero-description {
+    flex-direction: row;
+  }
+  .hero-text {
+    max-width: 592px;
+  }
+}
