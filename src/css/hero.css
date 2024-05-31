@@ -12,8 +12,7 @@
     background-image: url(../img/decor-hero-mob-2x.png);
   }
 }
-.container {
-}
+
 .hero-title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 64px;
@@ -39,8 +38,12 @@
 .order-link-hero {
   display: block;
   position: relative;
-
   z-index: 1;
+}
+.order-link-block:hover,
+.order-link-block:active,
+.order-link-block:focus {
+  background: rgba(20, 197, 124, 0.6);
 }
 .order-link {
   font-size: 20px;
@@ -52,7 +55,6 @@
   margin-top: 24px;
 }
 .order-link::before {
- 
 }
 .order-link-block {
   z-index: -1;
@@ -65,7 +67,7 @@
   background: #204136;
 }
 .hero-text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -85,8 +87,7 @@
   justify-content: center;
   align-items: center;
 }
-.hero-soc-item {
-}
+
 .hero-soc-link {
   font-weight: 300;
   font-size: 16px;
@@ -133,6 +134,9 @@
   .hero-soc-list {
     flex-direction: row;
     gap: 40px;
+  }
+  .hero-text {
+    font-size: 20px;
   }
   .hero-soc {
     padding: 40px 0;
