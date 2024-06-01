@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Keyboard } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import Swiper from 'swiper/bundle';
@@ -24,18 +24,66 @@ export const fetchData = async () => {
 
         const swiper = new Swiper('.swiper', {
      
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, A11y, Keyboard],
             direction: 'horizontal',
-            loop: true,
+            loop: false,
+
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
   
 
             //    Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
+            on: {
+                init: function () {
+                    updateNavigationState();
+                },
+                slideChange: function () {
+                    updateNavigationState();
+                }
+            },
+            breakpoints: {
+                
+                360: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 32,
+                }
+                
+            }
+            
+
         });
+        function updateNavigationState() {
+            const prevButton = document.querySelector('.swiper-button-prev');
+            const nextButton = document.querySelector('.swiper-button-next');
+
+            if (swiper.isBeginning) {
+                prevButton.disabled = true;
+            } else {
+                prevButton.disabled = false;
+            }
+
+            if (swiper.isEnd) {
+                nextButton.disabled = true;
+            } else {
+                nextButton.disabled = false;
+            }
+        };
 
     } catch (error) {
         console.error('error fetching data');
