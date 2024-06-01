@@ -1,13 +1,6 @@
 .footer {
     padding: 40px 20px 24px 20px;
-    /* max-height: 384px;
-    overflow: hidden; */
 }
-
-/* .footer-container {
-    max-height: 384px;
-        overflow: hidden;
-} */
 
 .logo {
     margin-bottom: 32px;
@@ -85,19 +78,25 @@ margin-bottom: 0;
     /* ------1280------ */
     @media screen and (min-width: 1280px) {
     .footer {
-        display: flex;
         flex-wrap: wrap;
-        margin: 0 auto;
     }
 
     .logo-logo {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        margin-bottom: 0;
     }
 
         .footer-menu {
+            display: flex;
+            justify-content: end;
             align-items: center;
+            margin: 0;
         }
 
     }
