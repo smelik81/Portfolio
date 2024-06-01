@@ -28,8 +28,10 @@
 .my-project-item {
   max-width: 320px;
 }
-/* .my-project-link {
-} */
+.my-project-link {
+  pointer-events: none;
+  cursor: default;
+}
 .my-project-image {
   border-radius: 20px;
 }
