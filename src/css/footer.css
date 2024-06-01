@@ -4,9 +4,13 @@
     overflow: hidden; */
 }
 
-.footer-container {
+/* .footer-container {
     max-height: 384px;
         overflow: hidden;
+} */
+
+.logo {
+    margin-bottom: 32px;
 }
 
 .footer-logo {
@@ -17,7 +21,6 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #f0f0f0;
-        margin-bottom: 32px;
 }
 
 .footer-logo-collor {
@@ -39,7 +42,6 @@ margin-bottom: 0;
 }
 
 .footer-link {
-/* font-family: "Poppins", sans-serif; */
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
@@ -48,7 +50,6 @@ margin-bottom: 0;
 }
 
 .footer-inscription {
-/* font-family: "Poppins", sans-serif; */
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
@@ -58,3 +59,45 @@ margin-bottom: 0;
     width: 197px;
     margin: auto;
 }
+
+/* ------768------ */
+
+@media screen and (min-width: 768px) {
+    .footer{
+    padding: 40px 32px 24px 32px;
+    }
+
+    .footer-menu {
+        display: flex;
+        gap: 40px;
+        }
+
+    .footer-menu li {
+    margin-bottom: 0;
+    }
+
+    .footer-inscription {
+        width: 100%;
+        text-align: right;
+    }
+    }
+
+    /* ------1280------ */
+    @media screen and (min-width: 1280px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .logo-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .footer-menu {
+            align-items: center;
+        }
+
+    }
