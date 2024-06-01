@@ -83,6 +83,7 @@ export const fetchData = async () => {
 
     } catch (error) {
         console.error('error fetching data', error);
+        alert `Sorry, reviews not found.`;
         list.innerHTML = "<p>Not found</p>";
     }
 };
