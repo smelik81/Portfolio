@@ -19,6 +19,12 @@ export const fetchData = async () => {
     try {
         const response = await axios.get(URL);
         const data = response.data;
+
+        if (data.length === 0) {
+            list.innerHTML = "<p>Not found</p>";
+            return;
+        }
+
         const markup = renderReviews(data);
         list.insertAdjacentHTML('beforeend', markup);
 
@@ -41,14 +47,6 @@ export const fetchData = async () => {
                 prevEl: '.swiper-button-prev',
             },
 
-            on: {
-                init: function () {
-                    updateNavigationState();
-                },
-                slideChange: function () {
-                    updateNavigationState();
-                }
-            },
             breakpoints: {
                 
                 360: {
@@ -63,12 +61,9 @@ export const fetchData = async () => {
                     slidesPerView: 2,
                     spaceBetween: 32,
                 }
-                
-            }
-            
-
-        });
-        function updateNavigationState() {
+                }
+            });
+         function updateNavigationState() {
             const prevButton = document.querySelector('.swiper-button-prev');
             const nextButton = document.querySelector('.swiper-button-next');
 
@@ -84,12 +79,14 @@ export const fetchData = async () => {
                 nextButton.disabled = false;
             }
         };
+        
 
     } catch (error) {
-        console.error('error fetching data');
-        
+        console.error('error fetching data', error);
+        list.innerHTML = "<p>Not found</p>";
     }
 };
+// fetchData();
 
         
 
