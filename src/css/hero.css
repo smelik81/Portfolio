@@ -36,7 +36,10 @@
   flex-direction: column;
 }
 .order-link-hero {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
   position: relative;
   z-index: 1;
 }
@@ -52,9 +55,9 @@
   text-transform: uppercase;
   color: #f0f0f0;
   display: block;
-  margin-top: 24px;
 }
-.order-link::before {
+.order-link {
+  margin-left: 16px;
 }
 .order-link-block {
   z-index: -1;
@@ -97,9 +100,6 @@
 }
 
 @media screen and (min-width: 360px) {
-  .order-link {
-    margin-top: 30px;
-  }
   .order-link-block {
     left: 155px;
     height: 92px;
@@ -171,6 +171,9 @@
   }
   .hero-title {
     margin-bottom: 80px;
+  }
+  .order-link-hero {
+    margin-left: 72px;
   }
   .hero-description {
     flex-direction: row;
