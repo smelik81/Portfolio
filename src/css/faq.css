@@ -38,6 +38,7 @@
 }
 
 .ac-trigger {
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -80,6 +81,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-bottom: 60px;
+    max-width: 372px;
   }
 
   .accordion-container {
