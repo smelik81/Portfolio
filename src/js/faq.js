@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const panels = document.querySelectorAll('.ac-panel');
   const svgs = document.querySelectorAll('.ac-svg');
   const items = document.querySelectorAll('.ac');
+  console.log(items);
 
   items[0].classList.add('open');
   panels[0].classList.add('open');
@@ -11,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
   panels[0].style.backgroundColor = 'rgba(20, 197, 124, 0.2)';
 
   triggers.forEach((trigger, index) => {
-    trigger.addEventListener('click', function () {
+    trigger.addEventListener('click', () => {
       const isOpen = items[index].classList.contains('open');
-
+     
       items.forEach(item => {
         item.classList.remove('open');
       });
@@ -21,11 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
         p.classList.remove('open');
         p.style.backgroundColor = 'transparent';
       });
+      svgs.forEach(svg => {
+        svg.classList.remove('rotate');
+      });
+      triggers.forEach(t => {
+        t.style.backgroundColor = '#1e2023';
+      });
 
       if (!isOpen) {
-        this.classList.add('open');
+        trigger.classList.add('open');
         panels[index].classList.add('open');
-        this.style.backgroundColor = 'rgba(20, 197, 124, 0.2)';
+        trigger.style.backgroundColor = 'rgba(20, 197, 124, 0.2)';
         panels[index].style.backgroundColor = 'rgba(20, 197, 124, 0.2)';
       }
     });
