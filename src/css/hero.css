@@ -1,5 +1,7 @@
 /* ------mobile----- */
-
+html {
+  scroll-behavior: smooth;
+}
 .hero-container {
   padding-top: 96px;
   padding-bottom: 72px;
@@ -109,7 +111,7 @@
     height: 92px;
   }
   .hero-text {
-     width: 320px;
+    width: 320px;
   }
 }
 

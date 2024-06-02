@@ -1,4 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 .header-wrap {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -13,6 +17,12 @@
 }
 .logo-color {
   color: #14c57c;
+}
+.header-btn {
+  background: inherit;
+}
+.btn-svg {
+  fill: #f0f0f0;
 }
 .header-navigation {
   display: none;
