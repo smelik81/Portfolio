@@ -33,6 +33,7 @@ export const fetchData = async () => {
             modules: [Navigation, Pagination, A11y, Keyboard],
             direction: 'horizontal',
             loop: false,
+            autoHeight: true,
 
             keyboard: {
                 enabled: true,
