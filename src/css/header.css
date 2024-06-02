@@ -1,1 +1,41 @@
-
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header-link-logo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+.logo-color {
+  color: #14c57c;
+}
+.header-navigation {
+  display: none;
+}
+@media screen and (min-width: 360px) {
+}
+@media screen and (min-width: 768px) {
+  .header-btn {
+    display: none;
+  }
+  .header-navigation {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #f0f0f0;
+  }
+  .header-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
