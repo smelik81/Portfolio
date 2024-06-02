@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, A11y, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Keyboard, Mousewheel } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 // import 'swiper/css/navigation';
@@ -30,7 +30,7 @@ export const fetchData = async () => {
 
         const swiper = new Swiper('.swiper', {
      
-            modules: [Navigation, Pagination, A11y, Keyboard],
+            modules: [Navigation, Pagination, A11y, Keyboard, Mousewheel],
             direction: 'horizontal',
             loop: false,
             autoHeight: true,
@@ -38,6 +38,10 @@ export const fetchData = async () => {
             keyboard: {
                 enabled: true,
                 onlyInViewport: true,
+            },
+
+            mousewheel: {
+            invert: true,
             },
   
 
