@@ -1,5 +1,7 @@
 /* ------mobile----- */
-
+html {
+  scroll-behavior: smooth;
+}
 .hero-container {
   padding-top: 96px;
   padding-bottom: 72px;
@@ -54,7 +56,9 @@
   text-transform: uppercase;
   color: #f0f0f0;
   display: block;
-  margin-left: 12px;
+}
+.order-link {
+  margin-left: 16px;
 }
 .svg-order {
   display: flex;
@@ -106,6 +110,9 @@
     left: 155px;
     height: 92px;
   }
+  .hero-text {
+    width: 320px;
+  }
 }
 
 /* ------tablet----- */
@@ -139,6 +146,7 @@
   }
   .hero-text {
     font-size: 20px;
+    width: 704px;
   }
   .hero-soc {
     padding: 40px 0;
@@ -177,12 +185,14 @@
   .order-link-hero {
     margin-left: 72px;
   }
+
   .order-link {
-    margin-left: 16px;
+    margin-left: 12px;
   }
   .svg-order {
     margin: 0;
   }
+
   .hero-description {
     flex-direction: row;
   }

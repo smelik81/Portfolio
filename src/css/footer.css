@@ -1,0 +1,102 @@
+.footer {
+   padding: 40px 20px 24px 20px;
+}
+
+.logo {
+    margin-bottom: 32px;
+}
+
+.footer-logo {
+    font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #f0f0f0;
+}
+
+.footer-logo-collor {
+    color: #14c57c;
+}
+
+.footer-menu {
+list-style-type: none;
+padding: 0;
+margin: 0 0 40px 0;
+}
+
+.footer-menu li {
+    margin-bottom: 24px;
+}
+
+.footer-menu li:last-child {
+margin-bottom: 0;
+}
+
+.footer-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #f0f0f0;
+}
+
+.footer-inscription {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #f0f0f0;
+    width: 197px;
+    margin: auto;
+}
+
+/* ------768------ */
+
+@media screen and (min-width: 768px) {
+    .footer{
+    padding: 40px 32px 24px 32px;
+    }
+
+    .footer-menu {
+        display: flex;
+        gap: 40px;
+        }
+
+    .footer-menu li {
+    margin-bottom: 0;
+    }
+
+    .footer-inscription {
+        width: 100%;
+        text-align: right;
+    }
+    }
+
+    /* ------1280------ */
+    @media screen and (min-width: 1280px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .logo-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+        .footer-menu {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin: 0;
+        }
+
+    }
