@@ -1,2 +1,10 @@
-import './js/my-projects.js';
+
+import './js/my-projects';
+
+
+import { fetchData } from "./js/reviews";
+fetchData();
+
+
 import './js/faq';
+
