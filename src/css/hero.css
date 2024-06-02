@@ -36,7 +36,9 @@
   flex-direction: column;
 }
 .order-link-hero {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
@@ -46,15 +48,18 @@
   background: rgba(20, 197, 124, 0.6);
 }
 .order-link {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f0f0f0;
   display: block;
-  margin-top: 24px;
+  margin-left: 12px;
 }
-.order-link::before {
+.svg-order {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
 }
 .order-link-block {
   z-index: -1;
@@ -97,9 +102,6 @@
 }
 
 @media screen and (min-width: 360px) {
-  .order-link {
-    margin-top: 30px;
-  }
   .order-link-block {
     left: 155px;
     height: 92px;
@@ -163,7 +165,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    align-items: center;
+    align-items: centerss;
   }
   .my-photo {
     display: block;
@@ -171,6 +173,15 @@
   }
   .hero-title {
     margin-bottom: 80px;
+  }
+  .order-link-hero {
+    margin-left: 72px;
+  }
+  .order-link {
+    margin-left: 16px;
+  }
+  .svg-order {
+    margin: 0;
   }
   .hero-description {
     flex-direction: row;
