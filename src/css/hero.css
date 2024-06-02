@@ -165,7 +165,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    align-items: centerss;
+    align-items: center;
   }
   .my-photo {
     display: block;
