@@ -185,8 +185,8 @@
         letter-spacing: 0.02em;
     }
     .reviews-section-wrapper {
-        height: 464px;
-        max-width: 768px;
+        /* height: 464px; */
+        max-width: 704px;
         padding: 0px 32px;
     
         }
@@ -196,8 +196,10 @@
     .list-text {
     }
     .reviews-container {
-        max-width: 768px;
-        }
+        max-width: 704px;
+        height: 161px;
+        
+    }
     .swiper-navigation-container {
         gap: 24px;
     width: 104px;
@@ -210,7 +212,7 @@
     }
 
     .reviews-section-wrapper {
-        height: 500px;
+        /* height: 500px; */
         max-width: 1280px;
 
     }
@@ -223,7 +225,8 @@
 
     .reviews-container {
         max-width: 592px;
-        height: 224px;
+        height: 161px;
+        justify-content: space-between;
     }
 
     .swiper-navigation-container {
