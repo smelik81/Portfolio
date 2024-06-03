@@ -23,6 +23,7 @@
         /* position: relative; */
 
     }
+    
 
     .section-title {
         font-weight: 400;
@@ -98,6 +99,9 @@
         letter-spacing: 0.03em;
         color: white;
 
+    }
+    .avatar {
+        border-radius: 24px;
     }
 
     .user-info {
