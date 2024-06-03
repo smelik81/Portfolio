@@ -5,6 +5,7 @@ html {
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-link-logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

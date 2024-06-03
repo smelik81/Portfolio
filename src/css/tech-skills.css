@@ -9,6 +9,9 @@ overflow: hidden;
 clip: rect(0, 0, 0, 0);
 border: 0;
 }
+.tech-skills {
+    padding-bottom: 80px;
+}
 
 .tech-skills-list {
 display: flex;
@@ -52,7 +55,7 @@ border-radius: 1px;
 display: flex;
 flex-direction: column;
 overflow: hidden;
-margin-top: 82px;
+padding-top: 73px;
 }
 
 .marquee-content-top {

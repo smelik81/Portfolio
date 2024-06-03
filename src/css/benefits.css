@@ -1,4 +1,7 @@
-/* .benefits {} */
+
+.benefits {
+    padding-bottom: 80px;
+}
 
 .benefits-title {
     font-family: "Impact", sans-serif;
