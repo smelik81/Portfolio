@@ -2,12 +2,10 @@
 .about-me {
   text-align: left;
   margin-bottom: 40px;
-  margin-top: 80px;
 }
 
 .about-me h1 {
   color: #f0f0f0;
-
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -22,22 +20,21 @@
 .bio-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: center;
 }
 
-.bio-section img {
-  border-radius: 16px;
-  max-width: 320px;
-  height: 374px;
+.about-me-img {
+  display: block;
 
   margin-left: auto;
   margin-right: auto;
+}
+
+.bio-image {
+  border-radius: 16px;
+  width: 100%;
+  height: 374px;
+  /* border: 1px solid red; */
 }
 
 .bio {
@@ -60,7 +57,6 @@
 }
 
 .bio p {
-  line-height: 1.5;
   color: #f0f0f0;
   margin-bottom: 24px;
 
@@ -87,7 +83,7 @@
 
   .bio h2 {
     font-size: 1.25em;
-    margin-left: 32px;
+    margin-top: 0;
 
     font-size: 36px;
     line-height: 48px;
@@ -96,18 +92,20 @@
 
   .bio p {
     font-size: 0.9em;
-    margin-left: 32px;
   }
 
   .bio-section {
     flex-direction: row;
+    gap: 32px;
   }
 
-  .bio-section img {
-    max-width: 336px;
-    height: 392px;
-    flex: 1 1 50%;
+  .about-me-img {
     margin-top: 368px;
+  }
+
+  .bio-image {
+    height: 392px;
+    min-width: 336px;
   }
 
   .bio {
@@ -116,14 +114,13 @@
 }
 
 .bio p:last-child::before {
-  margin-top: 40px;
-  top: 528px;
+  top: 856px;
   content: '';
   position: absolute;
   left: 32px;
-  height: 288px;
-  width: 384px;
-  background-image: url(../img/decor-bg-2-min.png);
+  height: 252px;
+  width: 336px;
+  background-image: url('../img/decor-bg-2-min.png');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,8 +128,13 @@
   z-index: -1;
 }
 
-.bio {
+.container {
   position: relative;
+}
+
+.bio p:last-child::before {
+  top: 856px;
+  left: 400px;
 }
 
 @media (min-width: 1280px) {
@@ -149,7 +151,6 @@
   }
 
   .bio h2 {
-    margin-left: 136px;
     font-size: 1.5em;
 
     font-size: 36px;
@@ -158,22 +159,38 @@
 
   .bio p {
     font-size: 1em;
-    margin-left: 136px;
   }
 
-  .bio-section img {
-    max-width: 384px;
-    height: 448px;
+  .bio-section {
+    gap: 136px;
+  }
+
+  .about-me-img {
     margin-left: 202px;
+    margin-top: 272px;
+  }
+
+  .bio-image {
+    height: 448px;
+    min-width: 384px;
   }
 
   .bio p:last-child::before {
-    left: 240px;
+    height: 288px;
+    width: 384px;
+    top: 692px;
+    left: 864px;
   }
 }
 
 @media (max-width: 767px) {
   .bio p:last-child::before {
     display: none;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bio p:last-child::before {
+    background-image: url('../img/decor-bg-2-min-2x.png');
   }
 }

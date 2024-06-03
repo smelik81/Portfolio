@@ -1,7 +1,7 @@
 const imagePaths = [
   {
     standartMob: './img/My-projects-finacec-mob-@1x.jpg',
-    retinaMob: './img/My-projects-finacec-mob-@2x.jpg',
+    retinaMob: '../img/My-projects-finacec-mob-@2x.jpg',
     standartTab: './img/My-projects-finacec-tab-@1x.jpg',
     retinaTab: './img/My-projects-finacec-tab@2x.jpg',
     standartDesk: './img/My-projects-finacec-desck@1x.jpg',
