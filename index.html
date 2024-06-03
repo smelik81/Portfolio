@@ -7,21 +7,21 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/teamproject-js-08/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/teamproject-js-08/assets/vendor-94f0a4ea.js">
+    <link rel="modulepreload" crossorigin href="/teamproject-js-08/assets/vendor-db44d75e.js">
     <link rel="stylesheet" href="/teamproject-js-08/assets/vendor-ecee2773.css">
-    <link rel="stylesheet" href="/teamproject-js-08/assets/index-ff12d42d.css">
+    <link rel="stylesheet" href="/teamproject-js-08/assets/index-d5cdcf41.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <div class="header-wrap">
-      <a href="/src/index.html" class="header-link-logo">
+      <a href="/index.html" class="header-link-logo">
         Lloyd<span class="logo-color">Jefferson.</span></a
       >
       <button class="header-btn">
-        <svg class="btn-svg">
+        <svg class="btn-svg" width="32" height="32">
           <use
-            href="/teamproject-js-08/assets/sprite_icon_opt-4e079471.svg#"
+            href="/teamproject-js-08/assets/sprite_icon_opt-4e079471.svg#icon-burger_menu"
             class="btn-svg-burger"
           ></use>
         </svg>
@@ -30,13 +30,13 @@
       <nav class="header-navigation">
         <ul class="header-menu">
           <li class="header-list">
-            <a href="#" class="header-link">About me</a>
+            <a href="#about-me" class="header-link">About me</a>
           </li>
           <li class="header-list">
-            <a href="#" class="header-link">Projects</a>
+            <a href="#projects" class="header-link">Projects</a>
           </li>
           <li class="header-list">
-            <a href="#" class="header-link">Contacts</a>
+            <a href="#together" class="header-link">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -55,14 +55,10 @@
           Hello, I am
           <picture>
             <source
-              srcset="../src/img/img-hero-1x.jpg 1x, ../src/img/img-hero-2x 2x"
+              srcset="/img/img-hero-1x.jpg 1x, /img/img-hero-2x 2x"
               media="(min-width: 1280px)"
             />
-            <img
-              class="my-photo"
-              src="data:image/jpeg;base64,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"
-              alt="photo"
-            />
+            <img class="my-photo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAGwAbAMBIgACEQEDEQH/xAA0AAABBQEBAQAAAAAAAAAAAAAFAQIDBAYHAAgBAAEFAQAAAAAAAAAAAAAAAAMAAQIEBQb/2gAMAwEAAhADEAAAAOl8XWiDOR3iQZDnSS1egFepTGrqtG4fKVyrKtte+/JnQZ2MZ6Xw6vi4m9T31zm3uh3eRy9vA2avIbFqqfNNpK2WAzzkSJeeiihoMVFf6hWEV26Oxz01gE0DygKVXSRWICcy1FRIokiJm6rKvYvX6FNwOrj4r3HlSJVp1yss6eKaI3Nxo5E5hrmpRuRUxPoXNOg1uiI8zOYYG2D0gM9c52GGWAmGxFYnNekenrP1+4mfB9EIjH1qHKet8vBo5C2+OEVZoPHwc5GUrNS7iT0NCzq05Kl+U/VZXs+UDbgaC3yrRa+V1lyY4+SuP2l6w4//xAAyEAACAQMDAwIEBAYDAAAAAAABAgMABBEFEiExQVEGExAgIjIUUmFxI0JTgZGhYnKx/9oACAEBAAE/APV3qsaKq2tsFe9dc88iIeTV5qeo6hIXu7uWUn8x4/sOgrFBc8U1tJgMQApNSWrxoW6/tSuGzxTCsHPwxSsyEMrEEdwcGvTnrvVtJmjjupnurToyOcuo8q1Wdzb3drDc28geKVQyN5BrVLx7/Ubu7kOTLKzfsOw+ABJxUNuFiLvx0I84qd5VnK7swb2BYdN2M0ZXeN0WPbHwXb/rmosRI8iA+4wbv9oqxlF/GLZDtuAT9ROKkumhmKSZPg1FIsq5U1isVivTPrSbRtNNmQGUSsyZ7BqIrbUIIljI67hWobvZwE4f8vONtRS28NhP4X6wSO7j7RU+pXbpLAFzGW5A7gikt7t8KgbrwCKbSr+HbOoKsKkufdbE4+tc7q01m9+RQcgDrWPlxS8EGss80bbWI2jIzjOTjmk9MXF3Ed8bKp5wD4qH0bhQWIT/AGat9BtLdOF3N5NarEiErgVqdmpklOMMDWkj+NIMdqK1isfDHx0mSI3CiWMGvx1jaqqzXEaHaDtJ+r/FT+odMAHExB7iF8f+VeeodMghM34qPaQcDcM8VP6kmv3ka2gURr/O9XN/cPM7PErE+DWmyRxmRG4Znplo/HFYrFadpF1qQkEEoTaRnDbWIPitNtnWO6VFAl93cxI5JYAgmrmx1K4uox+IwgHQIevkkmtY0i3u9P1a/kG/6ykHjEahd4/citFW1aUQ3JiTP9TpkdxmtTt7S3f+FKspPdMEf6qPPvragckg5/vmmo/N6VvEgvJIicNMuEJ6bhVtaQscyhhKi7WZWKEjqM7SKntrVr9IthkyCcSOzqAO+GJrX7yFdMuIIoC5+0AY6mhczwXURaEps6ir/UY7tUZP0BFWURM0kuOM4zRo/MjMjBlOGByCK0bWZdQMnvKokVFHH82Kv/x0Esslra/iHcqzDOCI+nH7eKm0iMqzm+jVhhhkDg16g08hrnbeNJLvG1sYGO5qeFIYbYbju4JPnFaeM2qt+Yk0wo/IaNCtLupba7Ro+S30485qx1KOZkc8EfTWq5EW9Y8p3IbFay0Nwm2IESluSfFakC01vAnYUiCONUHQKBTU1H5DS1btsnif8rqf8GtT0uaOZ7u1UkNy6Dz5FXmryexIjEgqOn61c3pZOh3Z480kZEu5zlz/AKFZyoP6U1Gj8mKVSSABkmtP9L3k2yW5DQxk8A/caBwBV5YWdyre5CjNjuK1uzsobsewgAAycVtJkZqEuwYPIpJFlTcucZI5GORRo0aZCrFSMEHBqKCadwkUbOx7KMmtP9IXs7Brs+wnjq5rTdC0ywlUxQZcD73+o1LHuQqOqnIong08gCsc4IrVrZpLpyDnJqSPDEDtSxlugPWrfS2WNEI6nLVLorvu2cN4qTTbqMZ2bh+lR2dzKCUiJAODV16NsG1G4uZGcxyyF1jHAGagsLa1XZbxJGv/ABFE7TilBBBonkNU8G87k4buOxrUWeJR2J7GorISwzTHspNRafNLG7CMlmbgVpXp5oQZZ/vPRfy1JHGJDHGMgdf1qK3jdQR+4NNY5faEyT2ArS9GtrKyEcsKNK7F2yM4zRAIwauo1iY7SaQ5nUeRQH0mj1rqtTJHKpSRFZfBGaNvDCskcaAIRyKt4Y1XKqBnxVyNsWB4qcBJ4mHUnFacoYlT0zVtZ28Sq4XL46nt8P/EACERAAICAgICAwEAAAAAAAAAAAECABEDIRIxECAEIkFR/9oACAECAQE/AGYkzI4RbMbPk1VCDIwF9gdxWsA+Fb++PldoYinvgSZzcdgReNa9MyBkIgc1qUDd2aikVoepNfUCzyqANf2C7iAfnrmV1IyJuuxGzPkcFbqY9AD0GNjCvEzIF0QBLMCmUYAB+eCAY2Ik9xMIXZ3B4//EACYRAAIBAwIHAQADAAAAAAAAAAECAwARIQQFEBITIjFBUSAycZH/2gAIAQMBAT8AklZ2OcVp4HnkCrUW06Zf53Y1JtkLHtPKT4FT6Z4WPtR74QzWwxxw2Qqests4NOUGOoBXJG17E1rLiKS/z8bbI6aqPlvY3uKMSc2SaPayhff2tTCHDI74844X4QymKRXHo1C4lHUDdrLcU3JbsYkjPitymZIT9ay/6PztEiPFJDIffaf7pYwkZVjW73PTPq5/CaaRsnArTRpGhC+fdQliCCTap4ElQo4uKl0JBJja4+GmR1NmUilRFOFFGgSpuKTUALYg3qXUlu1RYUfFE3r/2Q==" alt="photo" />
           </picture>
         </span>
 
@@ -78,7 +74,6 @@
           </div>
           <div class="order-link-block"></div>
         </a>
-     
 
         <p class="hero-text">
           I work with people all over the world to create
@@ -173,9 +168,139 @@
   </div>
 </div>
 
-      
-      
-      
+      <section class="tech-skills">
+    <h2 class="visually-hidden">Tech Skills</h2>
+    <div class="container tech-skills-container">
+        <div class="education">
+            <h3 class="tech-skills-title">EDUCATION</h3>
+            <ul class="tech-skills-list">
+                <li class="tech-skills-item">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
+                <li class="tech-skills-item">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
+                <li class="tech-skills-item">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+            </ul>
+        </div>
+        <div class="role">
+            <h3 class="tech-skills-title">ROLE</h3>
+            <ul class="tech-skills-list">
+                <li class="tech-skills-item">Frontend development</li>
+                <li class="tech-skills-item">HeadlessCMS, Wordpress</li>
+                <li class="tech-skills-item">Blender (enjoy)</li>
+            </ul>
+        </div>
+    </div>   
+</section>        
+<section class="marquee-section">
+    <div class="marquee">
+        <div class="top-marquee">
+            <div class="marquee-content-top">
+                <p class="content">
+                    <span>HTML/CSS</span>     
+                    <span>JAVASCRIPT</span>
+                    <span>REACT</span>
+                    <span>NODE.JS</span>
+                    <span>REACT NATIVE</span>
+                    <span>TYPE SCRIPT</span>
+                </p>
+            </div>
+            </div>
+            <div class="bootom-marquee">
+            <div class="bootom-marquee-content">
+                <p class="bootom-content">
+                    <span>HTML/CSS</span>     
+                    <span>JAVASCRIPT</span>
+                    <span>REACT</span>
+                    <span>NODE.JS</span>
+                    <span>REACT NATIVE</span>
+                    <span>TYPE SCRIPT</span>
+                </p>
+            </div>
+        </div>
+    </div>   
+</section>
+
+      <section class="my-project-section container">
+  <h2 class="my-project-section-title" id="projects">
+    MY<span>PROJECTS</span>
+  </h2>
+  <ul class="my-project-list js-my-project-list"></ul>
+  <button
+    type="button"
+    class="my-project-btn-load-more js-my-project-btn-load-more"
+  >
+    <span> load more</span>
+  </button>
+</section>
+
+      <section class="benefits container" id="benefits">
+  <h2 class="benefits-title">BENEFITS <span>OF WORKING WITH ME</span></h2>
+  <ul class="benefits-list">
+    <li class="benefits-item">
+      <svg class="benefits-icon">
+        <use
+          href="../img/sprite_icon_opt.svg#icon-user_icon"
+          width="24"
+          height="24"
+          x="12"
+          y="12"
+        ></use>
+      </svg>
+      <h3 class="benefits-subtitle">EXPERTISE</h3>
+      <p class="benefits-describe">
+        With extensive experience in development, I have a deep understanding of
+        programming and website development.
+      </p>
+    </li>
+    <li class="benefits-item">
+      <svg class="benefits-icon">
+        <use
+          href="../img/sprite_icon_opt.svg#icon-message-chat-icon"
+          width="24"
+          height="24"
+          x="12"
+          y="12"
+        ></use>
+      </svg>
+      <h3 class="benefits-subtitle">COMMUNICATION</h3>
+      <p class="benefits-describe">
+        Understanding your needs and wants is my priority and I am always
+        available for discussions and open to corrections.
+      </p>
+    </li>
+    <li class="benefits-item">
+      <svg class="benefits-icon">
+        <use
+          href="../img/sprite_icon_opt.svg#icon-brush_icon"
+          width="24"
+          height="24"
+          x="12"
+          y="12"
+        ></use>
+      </svg>
+      <h3 class="benefits-subtitle">ART</h3>
+      <p class="benefits-describe">
+        Thanks to my creative nature, I am ready to accept challenges and help
+        you bring your ideas to life.
+      </p>
+    </li>
+    <li class="benefits-item">
+      <svg class="benefits-icon">
+        <use
+          href="../img/sprite_icon_opt.svg#icon-hourglass_icon"
+          width="24"
+          height="24"
+          x="12"
+          y="12"
+        ></use>
+      </svg>
+      <h3 class="benefits-subtitle">URGENT EXECUTION</h3>
+      <p class="benefits-describe">
+        I understand how important time is to you. Ready to work quickly and
+        efficiently, without reducing the quality of work.
+      </p>
+    </li>
+  </ul>
+</section>
+
       <section class="faq container">
   <div>
     <h2 class="faq-header">
@@ -333,9 +458,111 @@
 
     
 </section>
-      
+      <section id="together" class="work-together container">
+  <h2 class="work-title">
+    let’s <span class="title-span"> work together</span>
+  </h2>
+  <div class="contacts-box">
+    <p class="work-text">
+      Contact me to transform your ideas into exceptional solutions.
+    </p>
+    <ul class="contacts-list">
+      <li class="contacts-list-item">
+        <svg class="contacts-work-svg" width="24" height="24">
+          <use href="/teamproject-js-08/"></use>
+        </svg>
+        <a class="contacts-work-link" href="tel:+380904567890">
+          +38 090 456 78 90
+        </a>
+      </li>
+      <li class="contacts-list-item">
+        <svg class="contacts-work-svg" width="24" height="24">
+          <use href="/teamproject-js-08/"></use>
+        </svg>
+        <a class="contacts-work-link" href="mailto:lloydjefferson@gmail.com">
+          lloydjefferson@gmail.com
+        </a>
+      </li>
+      <li class="contacts-list-item">
+        <svg class="contacts-work-svg" width="24" height="24">
+          <use href="/teamproject-js-08/"></use>
+        </svg>
+        <a
+          class="contacts-work-link"
+          target="_blank"
+          href="https://maps.app.goo.gl/LCiAYpx9y6Tn88iJ6"
+          >USA, New York</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <form class="contact-form">
+    <div class="email-box">
+      <label for="email" class="form-email-lable"></label>
+      <input
+        class="form-input-email"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your email*"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        required
+      >
+    </div>
+
+    <div class="massage-box">
+      <label class="form-lable-massage" for="message"></label>
+      <textarea
+        class="comment-field"
+        id="message"
+        name="message"
+        placeholder="Message"
+        required
+      ></textarea>
+    </div>
+
+    <button class="form-button-submit" type="submit">SEND MESSAGE</button>
+  </form>
+
+  <div id="modal" class="modal"  style="display: none">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+
+      <div class="modal-text-content">
+        <h3 class="modal-title">
+          "Thank you for your interest in cooperation!"
+        </h3>
+        <p class="modal-text">
+          "The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
-    
+    <section class="footer container">
+    <div class="footer-container">
+        <div class="footer-menu">
+            <div class="logo">
+                <a href="./index.html" class="footer-logo">LLOYD<span class="footer-logo-collor">JEFFERSON.</span></a>
+            </div>
+            <ul class="footer-list">
+                <li><a class="footer-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+                </li>
+                <li><a class="footer-link" href="https://www.youtube.com/c/GoIT" target="_blank">Facebook</a></li>
+                <li><a class="footer-link" href="https://www.facebook.com/goITclub/" target="_blank">Linkedin</a>
+                </li>
+                <li><a class="footer-link" href="https://github.com/smelik81/teamproject-js-08"
+                        target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer-inscription">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+</section>
     
 
     
