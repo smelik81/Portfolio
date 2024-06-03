@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+.header {
+  padding-bottom: 16px;
+}
+
 .header-wrap {
   padding: 20px 0;
   display: flex;
@@ -30,9 +34,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0;
-  }
+ 
   .header-wrap {
     display: flex;
     justify-content: space-between;

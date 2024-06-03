@@ -8,6 +8,7 @@
 } */
     .reviews-section {
         background-color: #1E2023;
+        padding-bottom: 80px;
         /* position: relative; */
     }
 
@@ -166,9 +167,9 @@
     }
     
    @media screen and (min-width: 768px) {
-    .reviews-section {
+   /*  .reviews-section {
         margin-top: 124px;
-    }
+    } */
     .section-title {
         font-size: 108px;
         line-height: 1.15;
@@ -197,9 +198,9 @@
         
    }
    @media screen and (min-width: 1280px) {
-.reviews-section {
+/* .reviews-section {
         margin-top: 164px;
-    }
+    } */
 
     .reviews-section-wrapper {
         /* height: 500px; */
