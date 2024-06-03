@@ -1,11 +1,11 @@
 const imagePaths = [
   {
-    standartMob: '/img/My-projects-finacec-mob-@1x.jpg',
-    retinaMob: '/img/My-projects-finacec-mob-@2x.jpg',
-    standartTab: '/img/My-projects-finacec-tab-@1x.jpg',
-    retinaTab: '/img/My-projects-finacec-tab@2x.jpg',
-    standartDesk: '/img/My-projects-finacec-desck@1x.jpg',
-    retinaDesk: '/img/My-projects-finacec-desck@2x.jpg',
+    standartMob: '../img/My-projects-finacec-mob-@1x.jpg',
+    retinaMob: '../img/My-projects-finacec-mob-@2x.jpg',
+    standartTab: '../img/My-projects-finacec-tab-@1x.jpg',
+    retinaTab: '../img/My-projects-finacec-tab@2x.jpg',
+    standartDesk: '../img/My-projects-finacec-desck@1x.jpg',
+    retinaDesk: '../img/My-projects-finacec-desck@2x.jpg',
     description: 'Wallet webservice',
     title: 'Wallet webservice',
   },
@@ -142,7 +142,7 @@ const adaptivePicture = imagePaths.map(
           </svg>
       <button onclick="window.open('https://github.com/smelik81/teamproject-js-08', '_blank')" class="my-project-item-btn-visit">VISIT
     <svg width="18" height="18" class="my-project-item-btn-visit-svg">
-        <use href="../img/sprite_icon_opt.svg#icon-Arrow_visit_up"></use>
+        <use href="/img/sprite_icon_opt.svg#icon-Arrow_visit_up"></use>
 </button></div>
          </li>`;
   }
