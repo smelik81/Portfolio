@@ -4,6 +4,7 @@ import { Navigation, Pagination, A11y, Keyboard, Mousewheel } from 'swiper/modul
 import 'swiper/css';
 // import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 // import Swiper from 'swiper/bundle';
 // import 'swiper/css/bundle';
@@ -33,7 +34,7 @@ export const fetchData = async () => {
             modules: [Navigation, Pagination, A11y, Keyboard, Mousewheel],
             direction: 'horizontal',
             loop: false,
-            autoHeight: true,
+            // autoHeight: true,
 
             keyboard: {
                 enabled: true,
