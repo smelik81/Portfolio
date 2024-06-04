@@ -26,11 +26,18 @@ body {
   margin: 0;
 }
 
-/* mobile fluid layout, Гумова верстка до 375px*/
+.container {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+/* mobile fluid layout, Гумова верстка до 360px*/
 @media only screen and (min-width: 320px) and (max-width: 359.99px) {
   .container {
-    max-width: 359.99px;
-    margin: 0 auto;
     padding: 0 20px;
   }
 }
