@@ -36,7 +36,8 @@
 .modale-block {
     height: 100%;
     display: flex;
-    padding: 260px 119px 324px 119px;
+    align-items: center;
+    justify-content: center;
 }
 .modale-list {
     display: flex;

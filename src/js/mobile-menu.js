@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    console.log(mobileMenuBtn);
     const modaleClose = document.getElementById('modaleClose');
      const mobileWindow = document.getElementById('mobileWindow');
 
@@ -15,6 +14,25 @@ document.addEventListener('DOMContentLoaded', function () {
      mobileMenuBtn.addEventListener('click', openMobileMenu);
      modaleClose.addEventListener('click', closeMobileMenu);
 
+  
+      document.querySelectorAll('.modale-item a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+            });
+            closeMobileMenu(); 
+          }
+        });
+      });
+
+      document.querySelectorAll('#mobileWindow a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          closeMobileMenu(); 
+        });
+      });
 
 
 
