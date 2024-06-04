@@ -1,101 +1,145 @@
+import finacecMobStandart from '../img/My-projects-finacec-mob-@1x.jpg';
+import finacecMobRetina from '../img/My-projects-finacec-mob-@2x.jpg';
+import finacecTabStandart from '../img/My-projects-finacec-tab-@1x.jpg';
+import finacecTabRetina from '../img/My-projects-finacec-tab@2x.jpg';
+import finacecDeskStandart from '../img/My-projects-finacec-desck@1x.jpg';
+import finacecDeskRetina from '../img/My-projects-finacec-desck@2x.jpg';
+
+import vegetablesMobStandart from '../img/My-projects-vegetables-mob-@1x.jpg';
+import vegetablesMobRetina from '../img/My-projects-vegetables-mob-@2x.jpg';
+import vegetablesTabStandart from '../img/My-projects-vegetables-tab-@1x.jpg';
+import vegetablesTabRetina from '../img/My-projects-vegetables-tab-@2x.jpg';
+import vegetablesDeskStandart from '../img/My-projects-vegetables-desck-@1x.jpg';
+import vegetablesDeskRetina from '../img/My-projects-vegetables-desck-@2x.jpg';
+
+import englishMobStandart from '../img/My-projects-english-mob@1x.jpg';
+import englishMobRetina from '../img/My-projects-english-mob@2x.jpg';
+import englishTabStandart from '../img/My-projects-english-tab@1x.jpg';
+import englishTabRetina from '../img/My-projects-english-tab@2x.jpg';
+import englishDeskStandart from '../img/My-projects-english-desck@1x.jpg';
+import englishDeskRetina from '../img/My-projects-english-desck@2x.jpg';
+
+import businessStandart from '../img/my-project-business@1x.jpg';
+import businessRetina from '../img/my-project-business@2x.jpg';
+
+import artistyStandart from '../img/my-project-artisty@1x.jpg';
+import artistyRetina from '../img/my-project-artisty@2x.jpg';
+
+import freshStandart from '../img/my-project-fresh@1x.jpg';
+import freshRetina from '../img/my-project-fresh@2x.jpg';
+
+import miminoStandart from '../img/my-project-mimino@1x.jpg';
+import miminoRetina from '../img/my-project-mimino@2x.jpg';
+
+import natureStandart from '../img/my-project-nature@1x.jpg';
+import natureRetina from '../img/my-project-nature@2x.jpg';
+
+import powerPlusStandart from '../img/my-project-PowerPlus@1x.jpg';
+import powerPlusRetina from '../img/my-project-PowerPlus@2x.jpg';
+
+import stayHealhtyStandart from '../img/my-project-stayHealhty@1x.jpg';
+import stayHealhtyRetina from '../img/my-project-stayHealhty@2x.jpg';
+
+import iconArrow from '../img/sprite_icon_opt.svg';
+
 const imagePaths = [
   {
-    standartMob: './img/My-projects-finacec-mob-@1x.jpg',
-    retinaMob: '../img/My-projects-finacec-mob-@2x.jpg',
-    standartTab: './img/My-projects-finacec-tab-@1x.jpg',
-    retinaTab: './img/My-projects-finacec-tab@2x.jpg',
-    standartDesk: './img/My-projects-finacec-desck@1x.jpg',
-    retinaDesk: './img/My-projects-finacec-desck@2x.jpg',
+    standartMob: finacecMobStandart,
+    retinaMob: finacecMobRetina,
+    standartTab: finacecTabStandart,
+    retinaTab: finacecTabRetina,
+    standartDesk: finacecDeskStandart,
+    retinaDesk: finacecDeskRetina,
     description: 'Wallet webservice',
     title: 'Wallet webservice',
   },
   {
-    standartMob: './src/img/My-projects-vegetables-mob-@1x.jpg',
-    retinaMob: './src/img/My-projects-vegetables-mob-@2x.jpg',
-    standartTab: './src/img/My-projects-vegetables-tab-@1x.jpg',
-    retinaTab: './src/img/My-projects-vegetables-tab-@2x.jpg',
-    standartDesk: './src/img/My-projects-vegetables-desck-@1x.jpg',
-    retinaDesk: './src/img/My-projects-vegetables-desck-@2x.jpg',
+    standartMob: vegetablesMobStandart,
+    retinaMob: vegetablesMobRetina,
+    standartTab: vegetablesTabStandart,
+    retinaTab: vegetablesTabRetina,
+    standartDesk: vegetablesDeskStandart,
+    retinaDesk: vegetablesDeskRetina,
     description: 'Green harvest webservice',
     title: 'Green harvest webservice',
   },
   {
-    standartMob: '/src/img/My-projects-english-mob@1x.jpg',
-    retinaMob: '/src/img/My-projects-english-mob@2x.jpg',
-    standartTab: '/src/img/My-projects-english-tab@1x.jpg',
-    retinaTab: '/src/img/My-projects-english-tab@2x.jpg',
-    standartDesk: '/src/img/My-projects-english-desck@1x.jpg',
-    retinaDesk: '/src/img/My-projects-english-desck@2x.jpg',
+    standartMob: englishMobStandart,
+    retinaMob: englishMobRetina,
+    standartTab: englishTabStandart,
+    retinaTab: englishTabRetina,
+    standartDesk: englishDeskStandart,
+    retinaDesk: englishDeskRetina,
     description: 'English Exellence webservice',
     title: 'English Exellence webservice',
   },
   {
-    standartMob: '/img/my-project-business@1x.jpg',
-    retinaMob: '/img/my-project-business@2x.jpg',
-    standartTab: '/img/my-project-business@1x.jpg',
-    retinaTab: '/img/my-project-business@2x.jpg',
-    standartDesk: '/img/my-project-business@1x.jpg',
-    retinaDesk: '/img/my-project-business@2x.jpg',
+    standartMob: businessStandart,
+    retinaMob: businessRetina,
+    standartTab: businessStandart,
+    retinaTab: businessRetina,
+    standartDesk: businessStandart,
+    retinaDesk: businessRetina,
     description: 'Starlight studio landing page',
     title: 'starlight studio landing page',
   },
   {
-    standartMob: '/src/img/my-project-artisty@1x.jpg',
-    retinaMob: '/src/img/my-project-artisty@2x.jpg',
-    standartTab: '/src/img/my-project-artisty@1x.jpg',
-    retinaTab: '/src/img/my-project-artisty@2x.jpg',
-    standartDesk: '/src/img/my-project-artisty@1x.jpg',
-    retinaDesk: '/src/img/my-project-artisty@2x.jpg',
+    standartMob: artistyStandart,
+    retinaMob: artistyRetina,
+    standartTab: artistyStandart,
+    retinaTab: artistyRetina,
+    standartDesk: artistyStandart,
+    retinaDesk: artistyRetina,
     description: 'Vyshyvanka vibes Landing Page',
     title: 'vyshyvanka vibes Landing Page',
   },
   {
-    standartMob: '/src/img/my-project-fresh@1x.jpg',
-    retinaMob: '/src/img/my-project-fresh@2x.jpg',
-    standartTab: '/src/img/my-project-fresh@1x.jpg',
-    retinaTab: '/src/img/my-project-fresh@2x.jpg',
-    standartDesk: '/src/img/my-project-fresh@1x.jpg',
-    retinaDesk: '/src/img/my-project-fresh@2x.jpg',
+    standartMob: freshStandart,
+    retinaMob: freshRetina,
+    standartTab: freshStandart,
+    retinaTab: freshRetina,
+    standartDesk: freshStandart,
+    retinaDesk: freshRetina,
     description: 'Fruitbox online store',
     title: 'fruitbox online store',
   },
   {
-    standartMob: '/src/img/my-project-mimino@1x.jpg',
-    retinaMob: '/src/img/my-project-mimino@2x.jpg',
-    standartTab: '/src/img/my-project-mimino@1x.jpg',
-    retinaTab: '/src/img/my-project-mimino@2x.jpg',
-    standartDesk: '/src/img/my-project-mimino@1x.jpg',
-    retinaDesk: '/src/img/my-project-mimino@2x.jpg',
+    standartMob: miminoStandart,
+    retinaMob: miminoRetina,
+    standartTab: miminoStandart,
+    retinaTab: miminoRetina,
+    standartDesk: miminoStandart,
+    retinaDesk: miminoRetina,
     description: 'Mimino website',
     title: 'mimino website',
   },
   {
-    standartMob: '/src/img/my-project-nature@1x.jpg',
-    retinaMob: '/src/img/my-project-nature@2x.jpg',
-    standartTab: '/src/img/my-project-nature@1x.jpg',
-    retinaTab: '/src/img/my-project-nature@2x.jpg',
-    standartDesk: '/src/img/my-project-nature@1x.jpg',
-    retinaDesk: '/src/img/my-project-nature@2x.jpg',
+    standartMob: natureStandart,
+    retinaMob: natureRetina,
+    standartTab: natureStandart,
+    retinaTab: natureRetina,
+    standartDesk: natureStandart,
+    retinaDesk: natureRetina,
     description: 'CHEGO jewelry website',
     title: 'chego jewelry website',
   },
   {
-    standartMob: '/src/img/my-project-PowerPlus@1x.jpg',
-    retinaMob: '/src/img/my-project-PowerPlus@2x.jpg',
-    standartTab: '/src/img/my-project-PowerPlus@1x.jpg',
-    retinaTab: '/src/img/my-project-PowerPlus@2x.jpg',
-    standartDesk: '/src/img/my-project-PowerPlus@1x.jpg',
-    retinaDesk: '/src/img/my-project-PowerPlus@2x.jpg',
+    standartMob: powerPlusStandart,
+    retinaMob: powerPlusRetina,
+    standartTab: powerPlusStandart,
+    retinaTab: powerPlusRetina,
+    standartDesk: powerPlusStandart,
+    retinaDesk: powerPlusRetina,
     description: 'Power pulse webservice',
     title: 'power pulse webservice ',
   },
   {
-    standartMob: '/src/img/my-project-stayHealhty@1x.jpg',
-    retinaMob: '/src/img/my-project-stayHealhty@2x.jpg',
-    standartTab: '/src/img/my-project-stayHealhty@1x.jpg',
-    retinaTab: '/src/img/my-project-stayHealhty@2x.jpg',
-    standartDesk: '/src/img/my-project-stayHealhty@1x.jpg',
-    retinaDesk: '/src/img/my-project-stayHealhty@2x.jpg',
+    standartMob: stayHealhtyStandart,
+    retinaMob: stayHealhtyRetina,
+    standartTab: stayHealhtyStandart,
+    retinaTab: stayHealhtyRetina,
+    standartDesk: stayHealhtyStandart,
+    retinaDesk: stayHealhtyRetina,
     description: 'Energy flow webservice ',
     title: 'energy flow webservice ',
   },
@@ -142,7 +186,7 @@ const adaptivePicture = imagePaths.map(
           </svg>
       <button onclick="window.open('https://github.com/smelik81/teamproject-js-08', '_blank')" class="my-project-item-btn-visit">VISIT
     <svg width="18" height="18" class="my-project-item-btn-visit-svg">
-        <use href="../img/sprite_icon_opt.svg#icon-Arrow_visit_up"></use>
+        <use href="${iconArrow}#icon-Arrow_visit_up"></use>
 </button></div>
          </li>`;
   }
