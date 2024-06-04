@@ -6,14 +6,14 @@ html {
 }
 
 .header-wrap {
-  padding: 20px 0;
+  padding: 36px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header-link-logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.05em;
