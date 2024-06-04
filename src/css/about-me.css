@@ -72,9 +72,7 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 32px 32px 60px 32px;
-  }
+  
 
   .about-me h1 {
     font-size: 108px;
@@ -138,9 +136,7 @@
 }
 
 @media (min-width: 1280px) {
-  .container {
-    padding: 32px 32px 80px 32px;
-  }
+  
 
   .about-me h1 {
     font-weight: 400;
