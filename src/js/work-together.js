@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = event.target;
         if (!input.checkValidity()) {
             input.classList.add('invalid');
-            displayErrorMessage('Please enter a valid email address.', 'Error');
+            displayErrorMessage('Please enter a valid email address', 'Error');
         }
     }
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = event.target;
         if (!input.value.trim()) {
             input.classList.add('invalid');
-            displayErrorMessage('Please enter a message.', 'Error');
+            displayErrorMessage('Please enter a message', 'Error');
         }
     }
 
