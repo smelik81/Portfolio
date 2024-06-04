@@ -111,6 +111,10 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
+  .my-project-section {
+    padding-bottom: 124px;
+  }
+
   .my-project-section-title {
     font-size: 108px;
     line-height: 1.15;
@@ -142,6 +146,10 @@
 
 /* desktop */
 @media only screen and (min-width: 1280px) {
+  .my-project-section {
+    padding-bottom: 164px;
+  }
+
   .my-project-section-title {
     margin-bottom: 80px;
   }

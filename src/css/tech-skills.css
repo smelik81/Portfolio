@@ -137,6 +137,10 @@ transform: translateX(100%);
 
 @media screen and (min-width: 768px) {
 
+    .tech-skills {
+    padding-bottom: 124px;
+}
+
     .tech-skills-container {
     display: flex;
     justify-content: space-between;
@@ -155,10 +159,6 @@ transform: translateX(100%);
     width: 336px;
     }
 
-    .marquee {
-    margin-top: 124px;
-    }
-
     .content {
     font-size: 36px;
     line-height: 1.33;
@@ -175,6 +175,9 @@ transform: translateX(100%);
 }
 
 @media screen and (min-width: 1280px) {
+    .tech-skills {
+    padding-bottom: 164px;
+    }
 
     .tech-skills-container {
     justify-content: center;
