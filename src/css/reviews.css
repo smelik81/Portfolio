@@ -170,6 +170,11 @@
    /*  .reviews-section {
         margin-top: 124px;
     } */
+
+    .reviews-section {
+            padding-bottom: 124px;
+        }
+
     .section-title {
         font-size: 108px;
         line-height: 1.15;
@@ -201,6 +206,10 @@
 /* .reviews-section {
         margin-top: 164px;
     } */
+
+    .reviews-section {
+        padding-bottom: 164px;
+    }
 
     .reviews-section-wrapper {
         /* height: 500px; */
