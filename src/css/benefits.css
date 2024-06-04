@@ -100,6 +100,7 @@
     .benefits {
         display: flex;
         flex-direction: column;
+
         background-image: url('../img/bg-3-min-1x.png');
         background-position: right 0 top 0;
         background-size: 526px 408px;
