@@ -204,6 +204,10 @@
   pointer-events: auto;
 }
 
+.disable-interaction {
+  pointer-events: none;
+}
+
 .close-button {
   display: block;
   position: absolute;
