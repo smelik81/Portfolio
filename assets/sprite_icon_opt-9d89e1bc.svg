@@ -112,7 +112,10 @@
         d="M0.668 30.052v-2.667h42.667v2.667h-42.667zM0.668 17.332v-2.667h42.667v2.667h-42.667zM0.668 4.612v-2.667h42.667v2.667h-42.667z">
       </path>
     </symbol>
-    
+    <symbol id="icon-close_icon_btn" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M7 7l18 18"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M7 25l18-18"></path>
+</symbol>
     
   </defs>
 </svg>
