@@ -111,19 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
      backdrop.addEventListener('click', closeModal);
-
-    function checkElements() {
-      const main = document.querySelector('main');
-      const header = document.querySelector('header');
-      const footer = document.querySelector('footer');
-
-      if (main && header && footer) {
-        document.querySelectorAll('main, header, footer').forEach(el => {
-          el.classList.add('disable-interaction');
-        });
-      }
-    }
-    checkElements(); 
     
     const iziToastConfig = {
         position: 'topRight',
