@@ -4,6 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('.contact-form');
     const modal = document.getElementById('modal');
+    const backdrop = document.getElementById('backdrop');
     const closeButton = document.querySelector('.close-button');
 
     const emailInput = contactForm.querySelector('#email');
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = event.target;
         if (!input.checkValidity()) {
             input.classList.add('invalid');
-            displayErrorMessage('Please enter a valid email address.', 'Error');
+            displayErrorMessage('Please enter a valid email address');
         }
     }
 
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = event.target;
         if (!input.value.trim()) {
             input.classList.add('invalid');
-            displayErrorMessage('Please enter a message.', 'Error');
+            displayErrorMessage('Please enter a message');
         }
     }
 
@@ -89,11 +90,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openModal() {
         modal.style.display = 'block';
+        backdrop.classList.add('show');
+        document.body.style.overflow = 'hidden';
+         document.addEventListener('keydown', handleKeyDown);
     }
 
     function closeModal() {
         modal.style.display = 'none';
+        backdrop.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        document.removeEventListener('keydown', handleKeyDown);
     }
+
+    function handleKeyDown(event) {
+        console.log('Key pressed:', event.key);
+        if (event.key === 'Escape') {
+          closeModal();
+        }
+    }
+
+     backdrop.addEventListener('click', closeModal);
+
 
     const iziToastConfig = {
         position: 'topRight',
