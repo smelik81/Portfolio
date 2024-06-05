@@ -31,13 +31,18 @@
 .my-project-item {
 }
 .my-project-link {
-  pointer-events: none;
   cursor: default;
+  overflow: hidden;
 }
 .my-project-image {
-  border-radius: 20px;
   width: 100%;
+  border-radius: 20px;
+  transition: 1s;
 }
+.my-project-link .my-project-image:hover {
+  transform: scale(1.05);
+}
+
 .my-project-tech {
   padding-top: 12px;
   font-weight: 300;
