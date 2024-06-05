@@ -1,4 +1,7 @@
-/* .benefits {} */
+
+.benefits {
+    padding-bottom: 80px;
+}
 
 .benefits-title {
     font-family: "Impact", sans-serif;
@@ -52,6 +55,9 @@
 /* -----------------tablet--------------- */
 
 @media only screen and (min-width: 768px) {
+    .benefits {
+    padding-bottom: 124px;
+    }
     .benefits-title{
         font-size: 108px;
         line-height: 1.15;
@@ -94,6 +100,20 @@
     .benefits {
         display: flex;
         flex-direction: column;
+
+        background-image: url('../img/bg-3-min-1x.png');
+        background-position: right 0 top 0;
+        background-size: 526px 408px;
+        background-repeat: no-repeat;
+        padding-bottom: 164px;
+    }
+    
+    @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+            .benefits {
+                background-image: url('../img/bg-3-min-2x.png');
+            }
+
     }
 
     .benefits-title {

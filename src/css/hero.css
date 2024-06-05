@@ -2,6 +2,10 @@
 html {
   scroll-behavior: smooth;
 }
+.hero {
+    padding-bottom: 90px;
+}
+
 .hero-container {
   padding-top: 96px;
   padding-bottom: 72px;
@@ -130,6 +134,10 @@ html {
       background-image: url(../img/decor-hero-tablet-2x.png);
     }
   }
+.hero {
+    padding-bottom: 124px;
+}
+
   .hero-title {
     font-size: 136px;
     line-height: 1.14;
@@ -168,6 +176,12 @@ html {
       background-image: url(../img/decor-hero-desctop-2x.png);
     }
   }
+
+  .hero {
+    padding-bottom: 164px;
+}
+
+
   .title-pictire {
     display: flex;
     flex-direction: row;
