@@ -72,11 +72,14 @@
 .logo-color {
   color: #14c57c;
 }
-/* .modale-close-btn {
+.modale-close-btn {
   background: inherit;
-} */
+  display: flex;
+  align-items: center;
+}
 .header-modale-svg {
   fill: #f0f0f0;
+  stroke: #f0f0f0;
 }
 
 /* .modale-wrap {
