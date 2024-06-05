@@ -93,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         backdrop.classList.add('show');
         document.body.style.overflow = 'hidden';
         document.addEventListener('keydown', handleKeyDown);
-        checkElements();
     }
 
     function closeModal() {
