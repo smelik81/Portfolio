@@ -291,14 +291,16 @@
   }
 .bg-decor-together {
   background-image: url(../img/decor-together-tablet.png);
+  background-position: center;
+  background-size: cover;
 
   width: 400px;
   height: 336px;
 
   position: absolute;
 
-  left: 54%;
-  top: -12%;
+  left: 52%;
+  top: -14%;
   
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -341,6 +343,8 @@
     background-image: url(../img/decor-together-desk.png);
     width: 526px;
     height: 408px;
+    left: 56%;
+    top: -19%;
   }
   @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
