@@ -201,6 +201,7 @@ function addProjects() {
 
     projectsContainer.appendChild(projectElement);
   });
+
   const nodesToRemove = ['TEXT', 'DIV'];
 
   for (let i = projectsContainer.childNodes.length - 1; i >= 0; i--) {
@@ -214,8 +215,15 @@ function addProjects() {
   });
   if (currentIndex >= adaptivePicture.length) {
     loadMoreBtn.style.display = 'none';
+
+    loadMoreBtn.removeEventListener('click', smoothScroll);
   }
 }
-loadMoreBtn.addEventListener('click', addProjects);
 
+function smoothScroll() {
+  loadMoreBtn.scrollIntoView({ behavior: 'smooth' });
+}
+
+loadMoreBtn.addEventListener('click', smoothScroll);
+loadMoreBtn.addEventListener('click', addProjects);
 addProjects();
