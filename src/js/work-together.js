@@ -106,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
           closeModal();
         }
     }
-
     backdrop.addEventListener('click', closeModal);
     
     const iziToastConfig = {
