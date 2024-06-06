@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 .hero {
-    padding-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .hero-container {
@@ -52,6 +52,7 @@ html {
 .order-link-block:active,
 .order-link-block:focus {
   background: rgba(20, 197, 124, 0.6);
+  transition: 1s;
 }
 .order-link {
   font-size: 18px;
@@ -108,6 +109,11 @@ html {
   letter-spacing: 0.03em;
   color: #f0f0f0;
 }
+.hero-soc-link:hover,
+.hero-soc-link:focus {
+  color: #14c57c;
+  transition: 1s;
+}
 
 @media screen and (min-width: 360px) {
   .order-link-block {
@@ -134,9 +140,9 @@ html {
       background-image: url(../img/decor-hero-tablet-2x.png);
     }
   }
-.hero {
+  .hero {
     padding-bottom: 124px;
-}
+  }
 
   .hero-title {
     font-size: 136px;
@@ -179,8 +185,7 @@ html {
 
   .hero {
     padding-bottom: 164px;
-}
-
+  }
 
   .title-pictire {
     display: flex;
