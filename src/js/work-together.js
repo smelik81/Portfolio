@@ -89,17 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function openModal() {
-        modal.style.display = 'block';
-        backdrop.classList.add('show');
-        document.body.style.overflow = 'hidden';
+
+       /*  document.body.style.overflow = 'hidden'; */
+        backdrop.classList.remove('is-hidden');
         document.addEventListener('keydown', handleKeyDown);
     }
 
     function closeModal() {
-        modal.style.display = 'none';
-        backdrop.classList.remove('show');
-        document.body.style.overflow = 'auto';
-        document.removeEventListener('keydown', handleKeyDown);
+        backdrop.classList.add('is-hidden');
+        document.removeEventListener('keydown', handleKeyDown);  
     }
 
     function handleKeyDown(event) {
@@ -109,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-     backdrop.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
     
     const iziToastConfig = {
         position: 'topRight',
