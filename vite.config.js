@@ -5,12 +5,29 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig(({ command }) => {
   return {
-    base: command === 'build' ? '/portfolio/' : '/',
+    base: '/Portfolio/',
+    //base: command === 'build' ? '/portfolio/' : '/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
     build: {
+      outDir: 'dist',
+      sourcemap: true,
+      rollupOptions: {
+        input: glob.sync('./src/*.html'),
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          },
+          entryFileNames: 'commonHelpers.js',
+        },
+      },
+    },
+
+    /* build: {
       sourcemap: true,
 
       rollupOptions: {
@@ -25,7 +42,7 @@ export default defineConfig(({ command }) => {
         },
       },
       outDir: '../dist',
-    },
+    }, */
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
 });
