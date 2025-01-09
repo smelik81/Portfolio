@@ -4,615 +4,729 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/portfolio/logo_favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-DobV49gj.js">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-kL0UEzgY.css">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BzVc2WF6.css">
+    <title>Portfolio</title>
+    <base href="/Portfolio/" />
+
+    <script
+      type="module"
+      crossorigin
+      src="/portfolio/commonHelpers.js"
+    ></script>
+    <link
+      rel="modulepreload"
+      crossorigin
+      href="/portfolio/assets/vendor-DobV49gj.js"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="/portfolio/assets/vendor-kL0UEzgY.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="/portfolio/assets/index-BzVc2WF6.css"
+    />
   </head>
   <body>
-
     <header class="header">
-  <div class="container">
-    <div class="header-wrap">
-      <a href="./index.html" class="header-link-logo">
-        Lloyd<span class="logo-color">Jefferson.</span></a
-      >
-      <button
-        id="mobileMenuBtn"
-        class="header-btn"
-        type="button"
-        aria-label="mobile btn menu"
-      >
-        <svg class="btn-svg" width="24" height="24">
-          <use
-            href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-burger_menu"
-            class="btn-svg-burger"
-          ></use>
-        </svg>
-      </button>
+      <div class="container">
+        <div class="header-wrap">
+          <a href="./index.html" class="header-link-logo">
+            Lloyd<span class="logo-color">Jefferson.</span></a
+          >
+          <button
+            id="mobileMenuBtn"
+            class="header-btn"
+            type="button"
+            aria-label="mobile btn menu"
+          >
+            <svg class="btn-svg" width="24" height="24">
+              <use
+                href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-burger_menu"
+                class="btn-svg-burger"
+              ></use>
+            </svg>
+          </button>
 
-      <nav class="header-navigation">
-        <ul class="header-menu">
-          <li class="header-list">
-            <a href="#about-me" class="header-link">About me</a>
-          </li>
-          <li class="header-list">
-            <a href="#projects" class="header-link">Projects</a>
-          </li>
-          <li class="header-list">
-            <a href="#together" class="header-link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+          <nav class="header-navigation">
+            <ul class="header-menu">
+              <li class="header-list">
+                <a href="#about-me" class="header-link">About me</a>
+              </li>
+              <li class="header-list">
+                <a href="#projects" class="header-link">Projects</a>
+              </li>
+              <li class="header-list">
+                <a href="#together" class="header-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
-  <div class="container">
-    <div class="hero-container">
-      <h1 class="hero-title">
-        <span class="title-pictire">
-          Hello, I am
-          <picture>
-            <source
-              srcset="data:image/jpeg;base64,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 1x, /portfolio/assets/hero-2x-BjdKAzkw.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <img
-              class="my-photo"
-              src="data:image/jpeg;base64,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"
-              alt="Photo"
-              width="108"
-            />
-          </picture>
-        </span>
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-title">
+              <span class="title-pictire">
+                Hello, I am
+                <picture>
+                  <source
+                    srcset="
+                      data:image/jpeg;base64,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 1x,
+                      /portfolio/assets/hero-2x-BjdKAzkw.jpg                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="my-photo"
+                    src="data:image/jpeg;base64,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"
+                    alt="Photo"
+                    width="108"
+                  />
+                </picture>
+              </span>
 
-        <span class="hero-title-green">Fullstack Developer</span>
-      </h1>
-      <div class="hero-description">
-        <a href="#together" class="order-link-hero">
-          <div class="svg-order">
-            <svg class="hero-arrow-order" width="28" height="28">
-              <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Arrow_right"></use>
-            </svg>
-            <span class="order-link">order the project</span>
+              <span class="hero-title-green">Fullstack Developer</span>
+            </h1>
+            <div class="hero-description">
+              <a href="#together" class="order-link-hero">
+                <div class="svg-order">
+                  <svg class="hero-arrow-order" width="28" height="28">
+                    <use
+                      href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Arrow_right"
+                    ></use>
+                  </svg>
+                  <span class="order-link">order the project</span>
+                </div>
+                <div class="order-link-block"></div>
+              </a>
+
+              <p class="hero-text">
+                I work with people all over the world to create
+                <span class="hero-text-color">impressive</span> and
+                <span class="hero-text-color">functional websites</span> that
+                reflect each client's unique personality.
+              </p>
+            </div>
           </div>
-          <div class="order-link-block"></div>
-        </a>
+        </div>
 
-        <p class="hero-text">
-          I work with people all over the world to create
-          <span class="hero-text-color">impressive</span> and
-          <span class="hero-text-color">functional websites</span> that reflect
-          each client's unique personality.
-        </p>
-      </div>
-    </div>
-  </div>
+        <div class="hero-soc">
+          <ul class="hero-soc-list">
+            <li class="hero-soc-item">
+              <a
+                href="https://www.instagram.com/goitclub/"
+                class="hero-soc-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
 
-  <div class="hero-soc">
-    <ul class="hero-soc-list">
-      <li class="hero-soc-item">
-        <a
-          href="https://www.instagram.com/goitclub/"
-          class="hero-soc-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Instagram</a
-        >
-      </li>
+            <li class="hero-soc-item">
+              <a
+                href="https://www.facebook.com/goITclub/"
+                class="hero-soc-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
 
-      <li class="hero-soc-item">
-        <a
-          href="https://www.facebook.com/goITclub/"
-          class="hero-soc-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Facebook</a
-        >
-      </li>
+            <li class="hero-soc-item">
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                class="hero-soc-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
 
-      <li class="hero-soc-item">
-        <a
-          href="https://www.youtube.com/c/GoIT"
-          class="hero-soc-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
-      </li>
+            <li class="hero-soc-item">
+              <a
+                href="https://github.com/smelik81/teamproject-js-08"
+                class="hero-soc-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <li class="hero-soc-item">
-        <a
-          href="https://github.com/smelik81/teamproject-js-08"
-          class="hero-soc-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-      </li>
-    </ul>
-  </div>
-</section>
-
-      
-<section class="about"> 
-  <div id="about-me" class="container">
-    <div class="about-me">
-      <h2 class="about-title">ABOUT <span class="highlight">ME</span></h2>
-    </div>
-    <div class="bio-section">
-      <picture class="about-me-img">
-        <source srcset="/portfolio/assets/Photo-Lloyd-Jefferson-2x-Bt6Qe-yy.jpg" />
-        <img
-          class="bio-image"
-          src="/portfolio/assets/Photo-Lloyd-Jefferson-CIwA6IBm.jpg"
-          alt="Lloyd Jefferson"
-        />
-      </picture>
-      <div class="bio">
-        <h2>BIO</h2>
-        <p>
-          I'm Lloyd Jefferson, a talented programmer specializing in software
-          development. My expertise spans various programming languages and
-          technologies, and I am dedicated to continually enhancing my skills. I
-          thrive on seeking unconventional and creative solutions to problems,
-          leveraging a high level of analytical skills to effectively tackle even
-          the most challenging tasks.
-        </p>
-        <p>
-          Adaptable to both independent and team-oriented work, I collaborate
-          seamlessly with colleagues, exchanging ideas and finding optimal
-          solutions. My professional maturity enables me to navigate challenges
-          and stressful situations with a calm demeanor, maintaining a
-          consistently high quality of work. Committed to self-improvement, I
-          actively engage in studying new technologies and practices to stay
-          current with the latest innovations in the field.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="about">
+        <div id="about-me" class="container">
+          <div class="about-me">
+            <h2 class="about-title">ABOUT <span class="highlight">ME</span></h2>
+          </div>
+          <div class="bio-section">
+            <picture class="about-me-img">
+              <source
+                srcset="/portfolio/assets/Photo-Lloyd-Jefferson-2x-Bt6Qe-yy.jpg"
+              />
+              <img
+                class="bio-image"
+                src="/portfolio/assets/Photo-Lloyd-Jefferson-CIwA6IBm.jpg"
+                alt="Lloyd Jefferson"
+              />
+            </picture>
+            <div class="bio">
+              <h2>BIO</h2>
+              <p>
+                I'm Lloyd Jefferson, a talented programmer specializing in
+                software development. My expertise spans various programming
+                languages and technologies, and I am dedicated to continually
+                enhancing my skills. I thrive on seeking unconventional and
+                creative solutions to problems, leveraging a high level of
+                analytical skills to effectively tackle even the most
+                challenging tasks.
+              </p>
+              <p>
+                Adaptable to both independent and team-oriented work, I
+                collaborate seamlessly with colleagues, exchanging ideas and
+                finding optimal solutions. My professional maturity enables me
+                to navigate challenges and stressful situations with a calm
+                demeanor, maintaining a consistently high quality of work.
+                Committed to self-improvement, I actively engage in studying new
+                technologies and practices to stay current with the latest
+                innovations in the field.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="tech-skills">
-    <h2 class="visually-hidden">Tech Skills</h2>
-    <div class="container tech-skills-container">
-        <div class="education">
+        <h2 class="visually-hidden">Tech Skills</h2>
+        <div class="container tech-skills-container">
+          <div class="education">
             <h3 class="tech-skills-title">EDUCATION</h3>
             <ul class="tech-skills-list">
-                <li class="tech-skills-item">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
-                <li class="tech-skills-item">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
-                <li class="tech-skills-item">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+              <li class="tech-skills-item">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </li>
+              <li class="tech-skills-item">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </li>
+              <li class="tech-skills-item">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </li>
             </ul>
-        </div>
-        <div class="role">
+          </div>
+          <div class="role">
             <h3 class="tech-skills-title">ROLE</h3>
             <ul class="tech-skills-list">
-                <li class="tech-skills-item">Frontend development</li>
-                <li class="tech-skills-item">HeadlessCMS, Wordpress</li>
-                <li class="tech-skills-item">Blender (enjoy)</li>
+              <li class="tech-skills-item">Frontend development</li>
+              <li class="tech-skills-item">HeadlessCMS, Wordpress</li>
+              <li class="tech-skills-item">Blender (enjoy)</li>
             </ul>
+          </div>
         </div>
-    </div>  
-    <div class="marquee-section">
-    <div class="marquee">
-        <div class="top-marquee">
-            <div class="marquee-content-top">
+        <div class="marquee-section">
+          <div class="marquee">
+            <div class="top-marquee">
+              <div class="marquee-content-top">
                 <p class="content">
-                    <span>HTML/CSS</span>     
-                    <span>JAVASCRIPT</span>
-                    <span>REACT</span>
-                    <span>NODE.JS</span>
-                    <span>REACT NATIVE</span>
-                    <span>TYPE SCRIPT</span>
+                  <span>HTML/CSS</span>
+                  <span>JAVASCRIPT</span>
+                  <span>REACT</span>
+                  <span>NODE.JS</span>
+                  <span>REACT NATIVE</span>
+                  <span>TYPE SCRIPT</span>
                 </p>
-            </div>
+              </div>
             </div>
             <div class="bootom-marquee">
-            <div class="bootom-marquee-content">
+              <div class="bootom-marquee-content">
                 <p class="bootom-content">
-                    <span>HTML/CSS</span>     
-                    <span>JAVASCRIPT</span>
-                    <span>REACT</span>
-                    <span>NODE.JS</span>
-                    <span>REACT NATIVE</span>
-                    <span>TYPE SCRIPT</span>
+                  <span>HTML/CSS</span>
+                  <span>JAVASCRIPT</span>
+                  <span>REACT</span>
+                  <span>NODE.JS</span>
+                  <span>REACT NATIVE</span>
+                  <span>TYPE SCRIPT</span>
                 </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>   
-</div>
- 
-</section>        
+      </section>
 
       <section class="my-project-section container">
-  <div class="my-project-container">
-    <h2 class="my-project-section-title" id="projects">
-      MY<span>PROJECTS</span>
-    </h2>
-    <ul class="my-project-list js-my-project-list"></ul>
-    <button
-      type="button"
-      class="my-project-btn-load-more js-my-project-btn-load-more"
-    >
-      <span> load more</span>
-    </button>
-  </div>
-</section>
+        <div class="my-project-container">
+          <h2 class="my-project-section-title" id="projects">
+            MY<span>PROJECTS</span>
+          </h2>
+          <ul class="my-project-list js-my-project-list"></ul>
+          <button
+            type="button"
+            class="my-project-btn-load-more js-my-project-btn-load-more"
+          >
+            <span> load more</span>
+          </button>
+        </div>
+      </section>
 
       <section class="benefits container" id="benefits">
-  <h2 class="benefits-title">BENEFITS <span>OF WORKING WITH ME</span></h2>
-  <ul class="benefits-list">
-    <li class="benefits-item">
-      <svg class="benefits-icon">
-        <use
-          href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-user_icon"
-          width="24"
-          height="24"
-          x="12"
-          y="12"
-        ></use>
-      </svg>
-      <h3 class="benefits-subtitle">EXPERTISE</h3>
-      <p class="benefits-describe">
-        With extensive experience in development, I have a deep understanding of
-        programming and website development.
-      </p>
-    </li>
-    <li class="benefits-item">
-      <svg class="benefits-icon">
-        <use
-          href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-message-chat-icon"
-          width="24"
-          height="24"
-          x="12"
-          y="12"
-        ></use>
-      </svg>
-      <h3 class="benefits-subtitle">COMMUNICATION</h3>
-      <p class="benefits-describe">
-        Understanding your needs and wants is my priority and I am always
-        available for discussions and open to corrections.
-      </p>
-    </li>
-    <li class="benefits-item">
-      <svg class="benefits-icon">
-        <use
-          href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-brush_icon"
-          width="24"
-          height="24"
-          x="12"
-          y="12"
-        ></use>
-      </svg>
-      <h3 class="benefits-subtitle">ART</h3>
-      <p class="benefits-describe">
-        Thanks to my creative nature, I am ready to accept challenges and help
-        you bring your ideas to life.
-      </p>
-    </li>
-    <li class="benefits-item">
-      <svg class="benefits-icon">
-        <use
-          href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-hourglass_icon"
-          width="24"
-          height="24"
-          x="12"
-          y="12"
-        ></use>
-      </svg>
-      <h3 class="benefits-subtitle">URGENT EXECUTION</h3>
-      <p class="benefits-describe">
-        I understand how important time is to you. Ready to work quickly and
-        efficiently, without reducing the quality of work.
-      </p>
-    </li>
-  </ul>
-</section>
+        <h2 class="benefits-title">BENEFITS <span>OF WORKING WITH ME</span></h2>
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <svg class="benefits-icon">
+              <use
+                href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-user_icon"
+                width="24"
+                height="24"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+            <h3 class="benefits-subtitle">EXPERTISE</h3>
+            <p class="benefits-describe">
+              With extensive experience in development, I have a deep
+              understanding of programming and website development.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <svg class="benefits-icon">
+              <use
+                href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-message-chat-icon"
+                width="24"
+                height="24"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+            <h3 class="benefits-subtitle">COMMUNICATION</h3>
+            <p class="benefits-describe">
+              Understanding your needs and wants is my priority and I am always
+              available for discussions and open to corrections.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <svg class="benefits-icon">
+              <use
+                href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-brush_icon"
+                width="24"
+                height="24"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+            <h3 class="benefits-subtitle">ART</h3>
+            <p class="benefits-describe">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <svg class="benefits-icon">
+              <use
+                href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-hourglass_icon"
+                width="24"
+                height="24"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+            <h3 class="benefits-subtitle">URGENT EXECUTION</h3>
+            <p class="benefits-describe">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </li>
+        </ul>
+      </section>
 
       <section class="faq container">
-  <div>
-    <h2 class="faq-header">
-      Frequently asked <span class="faq-header-question">question</span>
-    </h2>
-    <div class="faq-background"></div>
-  </div>
-
-  <ul class="accordion-container">
-    <li class="ac">
-      <h3 class="ac-header">
-        <button type="button" class="ac-trigger">
-          What programming languages ​​are most often used in your project?
-        </button>
-        <svg class="ac-svg rotate" width="32" height="32">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"></use>
-        </svg>
-      </h3>
-
-      <div class="ac-panel">
-        <p class="ac-text">
-          In the field of web development, there are various technologies and
-          programming languages. Typically, this includes a combination of
-          frontend (client side) and backend (server side) languages.
-        </p>
-      </div>
-    </li>
-
-    <li class="ac">
-      <h3 class="ac-header">
-        <button type="button" class="ac-trigger">
-          What are the deadlines for the project?
-        </button>
-        <svg class="ac-svg" width="32" height="32">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"></use>
-        </svg>
-      </h3>
-
-      <div class="ac-panel">
-        <p class="ac-text">
-          The terms of project implementation depend to a large extent on a
-          number of factors, such as the scope of the project, its complexity,
-          and the availability of resources. Determining exact deadlines is a
-          difficult task, and it usually occurs during the planning phase of the
-          project.
-        </p>
-      </div>
-    </li>
-
-    <li class="ac">
-      <h3 class="ac-header">
-        <button type="button" class="ac-trigger">
-          What payment methods do you accept?
-        </button>
-        <svg class="ac-svg" width="32" height="32">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"></use>
-        </svg>
-      </h3>
-
-      <div class="ac-panel">
-        <p class="ac-text">
-          Payment through credit and debit cards such as Visa, MasterCard,
-          specialized electronic payment systems such as PayPal, as well as
-          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-        </p>
-      </div>
-    </li>
-
-    <li class="ac">
-      <h3 class="ac-header">
-        <button type="button" class="ac-trigger">How can I contact you?</button>
-        <svg class="ac-svg" width="32" height="32">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"></use>
-        </svg>
-      </h3>
-
-      <div class="ac-panel">
-        <p class="ac-text">
-          In the field of web development, there are various technologies and
-          programming languages. Typically, this includes a combination of
-          frontend (client side) and backend (server side) languages.
-        </p>
-      </div>
-    </li>
-
-    <li class="ac">
-      <h3 class="ac-header">
-        <button type="button" class="ac-trigger">
-          Do you provide advice or support?
-        </button>
-        <svg class="ac-svg" width="32" height="32">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"></use>
-        </svg>
-      </h3>
-
-      <div class="ac-panel">
-        <p class="ac-text">
-          The terms of project implementation depend to a large extent on a
-          number of factors, such as the scope of the project, its complexity,
-          and the availability of resources. Determining exact deadlines is a
-          difficult task, and it usually occurs during the planning phase of the
-          project.
-        </p>
-      </div>
-    </li>
-
-    <li class="ac">
-      <h3 class="ac-header">
-        <button type="button" class="ac-trigger">
-          What does the process of developing a software product look like from
-          idea to implementation?
-        </button>
-        <svg class="ac-svg" width="32" height="32">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"></use>
-        </svg>
-      </h3>
-
-      <div class="ac-panel">
-        <p class="ac-text">
-          Payment through credit and debit cards such as Visa, MasterCard,
-          specialized electronic payment systems such as PayPal, as well as
-          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-        </p>
-      </div>
-    </li>
-  </ul>
-</section>
-
-      
-<section class="reviews-section">
-    <div class="reviews-section-wrapper container">
-        <h2 class="section-title">REVIEWS</h2>
-        <div class="swiper">
-            <ul class="reviews-list swiper-wrapper">
-        
-            </ul>
-        
+        <div>
+          <h2 class="faq-header">
+            Frequently asked <span class="faq-header-question">question</span>
+          </h2>
+          <div class="faq-background"></div>
         </div>
-        <!-- ---Контейнер для кнопок навігації---- -->
-        <div class="swiper-navigation-container">
-            <button class="swiper-button-prev" aria-label="Previous slide" tabindex="0">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 12H4.00001" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M10 18L4 12L10 6" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-            </button>
-            <button class="swiper-button-next" aria-label="Next slide" tabindex="0">
-                    <svg width="24" height="24">
-                        <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-arrow-narrow-right"></use>
-                    </svg>
-        
-            </button>
-        </div>
-         </div>
 
-    
-</section>
-      
-<section id="together" class=" together container">
-  <div class="bg-decor-together"></div>
+        <ul class="accordion-container">
+          <li class="ac">
+            <h3 class="ac-header">
+              <button type="button" class="ac-trigger">
+                What programming languages ​​are most often used in your
+                project?
+              </button>
+              <svg class="ac-svg rotate" width="32" height="32">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"
+                ></use>
+              </svg>
+            </h3>
 
-  <h2 class="work-title">
-    let’s <span class="title-span"> work together</span>
-  </h2>
- <div class="work-together">
-   <div class="contacts-box">
-    <p class="work-text">
-      Contact me to transform your ideas into exceptional solutions.
-    </p>
-    <ul class="contacts-list">
-      <li class="contacts-list-item">
-        <svg class="contacts-work-svg" width="24" height="24">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-phone_icon"></use>
-        </svg>
-        <a class="contacts-work-link" href="tel:+380904567890">
-          +38 090 456 78 90
-        </a>
-      </li>
-      <li class="contacts-list-item">
-        <svg class="contacts-work-svg" width="24" height="24">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-email_icon"></use>
-        </svg>
-        <a class="contacts-work-link" href="mailto:lloydjefferson@gmail.com">
-          lloydjefferson@gmail.com
-        </a>
-      </li>
-      <li class="contacts-list-item">
-        <svg class="contacts-work-svg" width="24" height="24">
-          <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-gps_icon"></use>
-        </svg>
-        <a
-          class="contacts-work-link"
-          target="_blank"
-          href="https://maps.app.goo.gl/LCiAYpx9y6Tn88iJ6"
-          >USA, New York</a
-        >
-      </li>
-    </ul>
-  </div>
-
-  <form class="contact-form">
-    <div class="email-box">
-      <label for="email" class="form-email-lable"></label>
-      <input
-        class="form-input-email"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your email*"
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        required
-      >
-    </div>
-
-    <div class="massage-box">
-      <label class="form-lable-massage" for="message"></label>
-      <textarea
-        class="comment-field"
-        id="message"
-        name="message"
-        placeholder="Message"
-        required
-      ></textarea>
-    </div>
-
-    <button class="form-button-submit" type="submit">SEND MESSAGE</button>
-  </form>
- </div>
- <div id="backdrop" class="backdrop is-hidden">
-    <div id="modal" class="modal-together">
-    <div class="modal-content">
-      <svg class="close-button" width="24" height="24">
-        <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-close_icon_btn"></use>
-      </svg>
-      <div class="modal-text-content">
-        <h3 class="modal-title">
-          Thank you for your interest in cooperation!
-        </h3>
-        <p class="modal-text">
-          The manager will contact you shortly to discuss further details and
-          opportunities for cooperation. Please stay in touch.
-        </p>
-      </div>
-    </div>
-  </div>
- </div>
-</section>
-
-
-    </main>
-    <section class="footer container">
-    <div class="footer-container">
-        <div class="footer-menu">
-            <div class="logo">
-                <a href="./index.html" class="footer-logo">LLOYD<span class="footer-logo-collor">JEFFERSON.</span></a>
+            <div class="ac-panel">
+              <p class="ac-text">
+                In the field of web development, there are various technologies
+                and programming languages. Typically, this includes a
+                combination of frontend (client side) and backend (server side)
+                languages.
+              </p>
             </div>
-            <ul class="footer-list">
-                <li><a class="footer-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
-                </li>
-                <li><a class="footer-link" href="https://www.youtube.com/c/GoIT" target="_blank">Facebook</a></li>
-                <li><a class="footer-link" href="https://www.facebook.com/goITclub/" target="_blank">Linkedin</a>
-                </li>
-                <li><a class="footer-link" href="https://github.com/smelik81/teamproject-js-08"
-                        target="_blank">GitHub</a>
-                </li>
-            </ul>
-        </div>
-        <p class="footer-inscription">© Copyright 2024. Made by LloydJefferson</p>
-    </div>
-</section>
-     <section class="modale">
-   <div class="container">
-      <div id="mobileWindow" class="modale-window">
-        <div class="container modale-nav">
-          <div class="modale-wrap">
-             <a href="./index.html" class="mobile-link-logo">
-          Lloyd<span class="logo-color">Jefferson.</span></a>
-            <button id="modaleClose" class="modale-close-btn" type="button">
-             <svg class="header-modale-svg" width="24" height="24">
-                <use href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-close_icon_btn"></use>
+          </li>
+
+          <li class="ac">
+            <h3 class="ac-header">
+              <button type="button" class="ac-trigger">
+                What are the deadlines for the project?
+              </button>
+              <svg class="ac-svg" width="32" height="32">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"
+                ></use>
+              </svg>
+            </h3>
+
+            <div class="ac-panel">
+              <p class="ac-text">
+                The terms of project implementation depend to a large extent on
+                a number of factors, such as the scope of the project, its
+                complexity, and the availability of resources. Determining exact
+                deadlines is a difficult task, and it usually occurs during the
+                planning phase of the project.
+              </p>
+            </div>
+          </li>
+
+          <li class="ac">
+            <h3 class="ac-header">
+              <button type="button" class="ac-trigger">
+                What payment methods do you accept?
+              </button>
+              <svg class="ac-svg" width="32" height="32">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"
+                ></use>
+              </svg>
+            </h3>
+
+            <div class="ac-panel">
+              <p class="ac-text">
+                Payment through credit and debit cards such as Visa, MasterCard,
+                specialized electronic payment systems such as PayPal, as well
+                as payments in cryptocurrencies such as Bitcoin, Ethereum and
+                others.
+              </p>
+            </div>
+          </li>
+
+          <li class="ac">
+            <h3 class="ac-header">
+              <button type="button" class="ac-trigger">
+                How can I contact you?
+              </button>
+              <svg class="ac-svg" width="32" height="32">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"
+                ></use>
+              </svg>
+            </h3>
+
+            <div class="ac-panel">
+              <p class="ac-text">
+                In the field of web development, there are various technologies
+                and programming languages. Typically, this includes a
+                combination of frontend (client side) and backend (server side)
+                languages.
+              </p>
+            </div>
+          </li>
+
+          <li class="ac">
+            <h3 class="ac-header">
+              <button type="button" class="ac-trigger">
+                Do you provide advice or support?
+              </button>
+              <svg class="ac-svg" width="32" height="32">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"
+                ></use>
+              </svg>
+            </h3>
+
+            <div class="ac-panel">
+              <p class="ac-text">
+                The terms of project implementation depend to a large extent on
+                a number of factors, such as the scope of the project, its
+                complexity, and the availability of resources. Determining exact
+                deadlines is a difficult task, and it usually occurs during the
+                planning phase of the project.
+              </p>
+            </div>
+          </li>
+
+          <li class="ac">
+            <h3 class="ac-header">
+              <button type="button" class="ac-trigger">
+                What does the process of developing a software product look like
+                from idea to implementation?
+              </button>
+              <svg class="ac-svg" width="32" height="32">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-Button-down"
+                ></use>
+              </svg>
+            </h3>
+
+            <div class="ac-panel">
+              <p class="ac-text">
+                Payment through credit and debit cards such as Visa, MasterCard,
+                specialized electronic payment systems such as PayPal, as well
+                as payments in cryptocurrencies such as Bitcoin, Ethereum and
+                others.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews-section">
+        <div class="reviews-section-wrapper container">
+          <h2 class="section-title">REVIEWS</h2>
+          <div class="swiper">
+            <ul class="reviews-list swiper-wrapper"></ul>
+          </div>
+          <!-- ---Контейнер для кнопок навігації---- -->
+          <div class="swiper-navigation-container">
+            <button
+              class="swiper-button-prev"
+              aria-label="Previous slide"
+              tabindex="0"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4.00001"
+                  stroke="#CCCCCC"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 18L4 12L10 6"
+                  stroke="#CCCCCC"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="swiper-button-next"
+              aria-label="Next slide"
+              tabindex="0"
+            >
+              <svg width="24" height="24">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-arrow-narrow-right"
+                ></use>
               </svg>
             </button>
           </div>
-          <div class="modale-block">
-            <ul class="modale-list">
-              <li class="modale-item">
-                <a href="#about-me" class="mobile-link">About me</a>
+        </div>
+      </section>
+
+      <section id="together" class="together container">
+        <div class="bg-decor-together"></div>
+
+        <h2 class="work-title">
+          let’s <span class="title-span"> work together</span>
+        </h2>
+        <div class="work-together">
+          <div class="contacts-box">
+            <p class="work-text">
+              Contact me to transform your ideas into exceptional solutions.
+            </p>
+            <ul class="contacts-list">
+              <li class="contacts-list-item">
+                <svg class="contacts-work-svg" width="24" height="24">
+                  <use
+                    href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-phone_icon"
+                  ></use>
+                </svg>
+                <a class="contacts-work-link" href="tel:+380904567890">
+                  +38 090 456 78 90
+                </a>
               </li>
-              <li class="modale-item">
-                <a href="#projects" class="mobile-link">Projects</a>
+              <li class="contacts-list-item">
+                <svg class="contacts-work-svg" width="24" height="24">
+                  <use
+                    href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-email_icon"
+                  ></use>
+                </svg>
+                <a
+                  class="contacts-work-link"
+                  href="mailto:lloydjefferson@gmail.com"
+                >
+                  lloydjefferson@gmail.com
+                </a>
               </li>
-              <li class="modale-item">
-                <a href="#together" class="mobile-link">Contacts</a>
+              <li class="contacts-list-item">
+                <svg class="contacts-work-svg" width="24" height="24">
+                  <use
+                    href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-gps_icon"
+                  ></use>
+                </svg>
+                <a
+                  class="contacts-work-link"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/LCiAYpx9y6Tn88iJ6"
+                  >USA, New York</a
+                >
               </li>
             </ul>
           </div>
+
+          <form class="contact-form">
+            <div class="email-box">
+              <label for="email" class="form-email-lable"></label>
+              <input
+                class="form-input-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email*"
+                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                required
+              />
+            </div>
+
+            <div class="massage-box">
+              <label class="form-lable-massage" for="message"></label>
+              <textarea
+                class="comment-field"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+
+            <button class="form-button-submit" type="submit">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+        <div id="backdrop" class="backdrop is-hidden">
+          <div id="modal" class="modal-together">
+            <div class="modal-content">
+              <svg class="close-button" width="24" height="24">
+                <use
+                  href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-close_icon_btn"
+                ></use>
+              </svg>
+              <div class="modal-text-content">
+                <h3 class="modal-title">
+                  Thank you for your interest in cooperation!
+                </h3>
+                <p class="modal-text">
+                  The manager will contact you shortly to discuss further
+                  details and opportunities for cooperation. Please stay in
+                  touch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="footer container">
+      <div class="footer-container">
+        <div class="footer-menu">
+          <div class="logo">
+            <a href="./index.html" class="footer-logo"
+              >LLOYD<span class="footer-logo-collor">JEFFERSON.</span></a
+            >
+          </div>
+          <ul class="footer-list">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://github.com/smelik81/teamproject-js-08"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="footer-inscription">
+          © Copyright 2024. Made by LloydJefferson
+        </p>
+      </div>
+    </section>
+    <section class="modale">
+      <div class="container">
+        <div id="mobileWindow" class="modale-window">
+          <div class="container modale-nav">
+            <div class="modale-wrap">
+              <a href="./index.html" class="mobile-link-logo">
+                Lloyd<span class="logo-color">Jefferson.</span></a
+              >
+              <button id="modaleClose" class="modale-close-btn" type="button">
+                <svg class="header-modale-svg" width="24" height="24">
+                  <use
+                    href="/portfolio/assets/sprite_icon_opt-Dq0C_IOj.svg#icon-close_icon_btn"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modale-block">
+              <ul class="modale-list">
+                <li class="modale-item">
+                  <a href="#about-me" class="mobile-link">About me</a>
+                </li>
+                <li class="modale-item">
+                  <a href="#projects" class="mobile-link">Projects</a>
+                </li>
+                <li class="modale-item">
+                  <a href="#together" class="mobile-link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-  </div>
- </section>
-
+    </section>
   </body>
 </html>
